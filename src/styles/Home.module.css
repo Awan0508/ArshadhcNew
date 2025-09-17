@@ -1,0 +1,570 @@
+.container {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem 1rem;
+  /* background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%); */
+}
+
+
+.heroContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+
+/* Clinic Name Container */
+.clinicNameContainer {
+  margin-bottom: 1rem;
+}
+
+.clinicName {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #1e4b7b 0%, #2c5282 25%, #38bdf8 50%, #1e4b7b 75%, #2c5282 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradientShift 3s ease-in-out infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 1px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #1e4b7b, #38bdf8);
+  margin: 1.5rem auto;
+  border-radius: 2px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #475569;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Award Badge */
+.awardBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #1e4b7be5 0%, #2c5382ea 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(30, 75, 123, 0.3);
+  margin-bottom: 2rem;
+}
+
+.badgeIcon {
+  font-size: 1.8rem;
+}
+
+
+.middleImage {
+  width: 680px;
+  height: 480px;
+  object-fit: contain;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  
+  /* Adjustable fade effect */
+  --fade-intensity: 70%; /* Change this value to control fade */
+  mask: radial-gradient(
+    circle at center, 
+    white var(--fade-intensity), 
+    transparent calc(var(--fade-intensity) + 10%)
+  );
+  -webkit-mask: radial-gradient(
+    circle at center, 
+    white var(--fade-intensity), 
+    transparent calc(var(--fade-intensity) + 10%)
+  );
+  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Middle Section - Quote and Image */
+.middleSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.quoteSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.171);
+  border-radius: 16px;
+  border-left: 4px solid #38bdf8;
+  backdrop-filter: blur(10px);
+  max-width: 900px;
+}
+
+.quoteIcon {
+  color: #1e4b7b83;
+}
+
+ .quote {
+  font-size: 1.3rem;
+  font-style: normal;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: 0.3px;
+  quotes: "“" "”" "‘" "’";
+}
+
+.quote::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: #1e4b7b;
+  line-height: 0;
+  margin-right: 0.5rem;
+  vertical-align: -0.5rem;
+}
+
+.quote::after {
+  content: close-quote;
+  font-size: 3rem;
+  color: #1e4b7b;
+  line-height: 0;
+  margin-left: 0.3rem;
+  vertical-align: -0.5rem;
+}
+
+.heroVisual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+}
+
+.circleDecor, .circleDecor2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(56, 189, 248, 0.15);
+  animation: float 6s infinite ease-in-out;
+}
+
+.circleDecor {
+  width: 250px;
+  height: 250px;
+  top: -30px;
+  right: -30px;
+}
+
+.circleDecor2 {
+  width: 180px;
+  height: 180px;
+  bottom: -20px;
+  left: -20px;
+  animation-delay: 2s;
+}
+
+.imageContainer {
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 8px solid white;
+}
+
+.heroImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CTA Container */
+.ctaContainer {
+  margin-top: 2rem;
+}
+
+
+
+
+
+
+/* Hero Visual */
+.heroVisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleDecor, .circleDecor2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(56, 189, 248, 0.15);
+  animation: float 6s infinite ease-in-out;
+}
+
+.circleDecor {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  right: -50px;
+}
+
+.circleDecor2 {
+  width: 200px;
+  height: 200px;
+  bottom: -30px;
+  left: -30px;
+  animation-delay: 2s;
+}
+
+.imageContainer {
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 8px solid white;
+}
+
+.heroImage {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Trust Indicators */
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #1e4b7b, #2c5282);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trustIndicators {
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trustItem {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.trustItem:hover {
+  background: #f0f5ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.trustIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.trustItem h4 {
+  margin: 0 0 0.8rem 0;
+  color: #1e293b;
+  font-size: 1.2rem;
+}
+
+.trustItem p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Specialties Section */
+.specialties {
+  padding: 5rem 1rem;
+  
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.specialtiesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.specialtyItem {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #38bdf8;
+}
+
+.specialtyItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.specialtyItem h4 {
+  color: #1e4b7b;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.specialtyItem p {
+  color: #64748b;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  
+  .middleSection {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .quoteSection {
+      max-width: 600px;
+  }
+  
+  .quote {
+  font-size: 1.4rem;
+  margin-top: -2rem;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+  .clinicName {
+    font-size: 3rem;
+  }
+  .branding {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .specialtiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+ 
+  
+   .clinicName {
+    font-size: 2.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+  }
+  
+  .awardBadge {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+ .quote {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .quote::before,
+  .quote::after {
+    font-size: 2.2rem;
+    vertical-align: -0.4rem;
+  }
+  
+  .heroImage {
+    height: 300px;
+  }
+  
+  .circleDecor, .circleDecor2 {
+    display: none;
+  }
+  
+   .title {
+    font-size: 2rem;
+  }
+  
+  .specialtiesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .specialtyItem {
+    padding: 1.5rem 1rem;
+  }
+  
+  .specialtyItem h4 {
+    font-size: 1.2rem;
+  }
+  
+  .specialtyItem p {
+    font-size: 0.95rem;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  
+  .clinicName {
+    font-size: 2rem;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+  }
+  
+  .awardBadge {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  .quote {
+    font-size: 1.1rem;
+  }
+  
+  .heroImage {
+    height: 250px;
+  }
+
+  .middleImage {
+  width: 430px;
+  height: 230px;
+  }
+  
+  .quoteSection {
+    padding: 1.5rem;
+  }
+  
+   .title {
+    font-size: 1.8rem;
+  }
+  
+  .trustGrid {
+    grid-template-columns: 1fr;
+  }
+  
+
+  .specialtiesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

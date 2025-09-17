@@ -1,0 +1,362 @@
+/* Base Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 80px;
+}
+
+.highlight {
+  color: #4CAF50;
+}
+
+/* Sticky Header */
+.stickyHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #4CAF50;
+  color: white;
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.contactButtons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stickyContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  gap: 3px;
+}
+
+.whatsappCta {
+  background: #0d913d;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.whatsappBtn, .callBtn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+    text-align: center;
+}
+
+.whatsappBtn {
+  background: #25D366;
+  color: white;
+
+}
+
+.callBtn {
+  background: white;
+  color: #4CAF50;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 80px 0 40px;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+              url('/gut-health-bg.jpg') center/cover;
+}
+
+.heroSection h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.heroSection h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Doctors Section */
+.doctorsSection {
+  padding: 60px 0;
+}
+
+.doctorsSection h2 {
+    text-align: center;
+}
+
+
+.doctorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.doctorCard {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.doctorCard:hover {
+  transform: translateY(-10px);
+}
+
+.doctorImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-size: cover;
+  background-position: center top; /* Ensures heads are fully visible */
+  background-repeat: no-repeat;
+  border: 2px solid #4CAF50;
+}
+
+/* Symptoms Grid */
+.symptomsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.symptomColumn {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.symptomColumn h3 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.symptomColumn ul {
+  padding-left: 20px;
+}
+
+.symptomColumn li {
+  margin-bottom: 10px;
+}
+
+/* Danger Section */
+.dangerSection {
+  background: #fff8f8;
+  padding: 60px 0;
+  margin-bottom: 3rem;
+}
+
+.dangerSection h2 {
+    text-align: center;
+}
+
+.dangerCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.dangerCard {
+  background: white;
+  padding: 5px;
+  border-radius: 8px;
+  border-left: 5px solid #ff6b6b;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dangerCard h3 {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonialCard {
+  background: #f0f9ff;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 5px solid #4CAF50;
+}
+
+.moreTestimonials {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  padding: 80px 0;
+  background: #347c72c7;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 5rem;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contactCta {
+  background: #f54e1b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.contactCta a {
+  color: white;
+}
+
+/* Why Homeopathy */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefitCard {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ctaSection p {
+  color: white;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+.stickyContent {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  padding: 0 5px;
+  width: fit-content;
+}
+
+.stickyContent a {
+  font-size: 90%;
+}
+
+/* .section h1 {
+  font-size: 1.25rem;
+} */
+
+  .heroSection h1 {
+    font-size: 1.5rem;
+  }
+   .heroSection h2 {
+    font-size: 1.35rem;
+  }
+  
+  .heroSection p {
+    font-size: .75rem;
+  }
+
+  .ctaSection h2{
+    font-size: 1.35rem;
+  }
+
+  .symptomsGrid, 
+  .dangerCards,
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefitCard h3 {
+    font-size: 1rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+}

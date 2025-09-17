@@ -1,0 +1,150 @@
+/* styles/DoctorsFooter.module.css */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #2f85d6 0%, #1e4b7b 100%);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .footerContent {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .doctorColumn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .doctorInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .doctorName {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .contactInfo {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .contactLink {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+  
+  .contactLink:hover {
+    color: #eeea16;
+  }
+  
+  .whatsappButton {
+    background: none;
+    border: none;
+    color: #25D366;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0;
+    transition: color 0.2s;
+  }
+  
+  .whatsappButton:hover {
+    color: #17e9d0;
+    text-decoration: underline;
+  }
+  
+  .verticalDivider {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.466);
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1px 0;
+    }
+  
+    .doctorName {
+      font-size: 0.8rem;
+    }
+  
+    .contactLink,
+    .whatsappButton {
+      font-size: 0.75rem;
+    }
+  
+    .contactInfo {
+      gap: 3px;
+    }
+  
+    /* .verticalDivider {
+      display: none;
+    } */
+  }
+  
+  @media (max-width: 480px) {
+    .footerContent {
+      padding: 0 1px;
+    }
+  
+    .doctorInfo {
+      padding: 0 5px;
+    }
+  
+    .doctorName {
+      font-size: 0.65rem;
+    }
+  
+    .contactLink {
+      font-size: 0.65rem;
+    }
+
+
+    .whatsappButton {
+      font-size: 0.65rem;
+    }
+
+   
+
+  }
+
+
+  @media (max-width: 375px) {
+    
+    .contactLink {
+      font-size: 0.65rem;
+    }
+
+   /*  .whatsappButton {
+      font-size: 0.65rem;
+      /* padding-top: -40rem; */
+    /* 
+ 
+    .contactInfo {
+      display: grid;
+      grid-template-columns: auto;
+      text-align: center;
+    }
+ */
+    .doctorName, .contactInfo, .whatsappButton {
+      font-size: 0.60rem;
+    }
+  
+  }

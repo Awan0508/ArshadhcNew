@@ -1,0 +1,807 @@
+
+
+
+
+.main {
+  max-width: 1600px;
+  margin: auto;
+}
+
+
+.container {
+  width: 90%;
+  min-height: 100vh;
+  margin-top: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+
+
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.heroContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.heroText {
+  max-width: 800px;
+}
+
+.clinicTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2c5530; /* Dark green color */
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.titleDivider {
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+.clinicSubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #5a5a5a;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+} 
+
+
+
+.heroVisual {
+  position: relative;
+}
+
+.heroImageContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.heroImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, 
+    rgba(30, 75, 123, 0.1) 0%, 
+    rgba(56, 189, 248, 0.2) 100%);
+}
+
+/* About Section */
+.aboutSection {
+  background: white;
+  padding: 5rem 0;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #1e4b7b, #2c5282);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.introParagraph {
+  font-size: 1.2rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.highlight {
+  color: #1e4b7b;
+  font-weight: 600;
+  background: linear-gradient(120deg, #e0f2fe 0%, #bae6fd 100%);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.benefitCard {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefitIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.benefitCard h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e4b7b;
+  margin-bottom: 0.5rem;
+}
+
+.benefitCard p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Philosophy Section */
+.philosophySection {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid #e0f2fe;
+}
+
+.philosophyHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.philosophyTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e4b7b;
+  margin-bottom: 0.5rem;
+}
+
+.philosophySubtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.philosophySteps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.stepCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stepCard:hover {
+  transform: translateX(5px);
+}
+
+.stepNumber {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #1e4b7b, #38bdf8);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.stepContent h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e4b7b;
+  margin-bottom: 0.5rem;
+}
+
+.stepContent p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .aboutContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .clinicTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+  
+ .clinicTitle {
+    font-size: 2.5rem;
+  }
+  
+  .clinicSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+  
+  .aboutContainer {
+    padding: 0 1.5rem;
+  }
+  
+  .philosophySection {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .clinicTitle {
+    font-size: 2rem;
+  }
+  
+  .clinicSubtitle {
+    font-size: 1rem;
+  }
+  
+  .heroContent {
+    padding: 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  
+  .heroImage {
+    height: 300px;
+  }
+  
+  .benefitCard,
+  .stepCard {
+    padding: 1.2rem;
+  }
+  
+  .philosophySection {
+    padding: 1.5rem;
+  }
+}
+
+
+
+.hero {
+  text-align: center;
+  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/clinic-banner.jpg'); */
+  background-size: cover;
+  background-position: center;
+  color: rgb(66, 65, 65);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: rgb(117, 115, 115);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #3498db;
+  margin: 0.5rem auto 0;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.aboutText {
+  flex: 1;
+}
+
+.aboutImage {
+  flex: 1;
+}
+
+.clinicImage {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.benefitsList {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.benefitsList li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.philosophyList {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.philosophyList li {
+  margin-bottom: 0.8rem;
+}
+
+.doctorsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+ 
+}
+
+.doctorCard {
+  display: flex;
+  gap: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.doctorImage {
+  flex: 0 0 400px;
+}
+
+.doctorImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctorInfo {
+  padding: 2rem;
+  flex: 1;
+}
+
+.doctorInfo h3 {
+  font-size: 1.35rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #7f8c8d;
+}
+
+
+
+.treatmentList {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.treatmentList li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.approach {
+  background: #e8f4fc;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+.approach h4 {
+  margin-bottom: 0.5rem;
+}
+
+
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.statNumber {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+
+
+.conditionColumns {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 2rem;
+  margin: 3rem 0;
+
+}
+
+.conditionCol {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.conditionCol h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.conditionCol ul {
+  padding-left: 1.5rem;
+}
+
+.conditionCol li {
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 1rem 0;
+  background: #def6fac2;
+  border-radius: 8px;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.ctaTitle {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #7f8c8d;
+  padding: 0 1rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+   padding: 0 1.5rem;
+}
+
+.primaryButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #92b8be6b;
+  /* color: white; */
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.primaryButton:hover {
+  background: #ffffff;
+}
+
+.primaryButton a{
+  color: inherit; /* Inherit text color instead of blue */
+  text-decoration: none; /* Remove underline */
+}
+
+.primaryButton a:hover{
+color: #fa0101;
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.secondaryButton:hover {
+  background: #c49f86da;
+}
+
+.secondaryButton a:hover{
+color: #e8f4fc;
+}
+
+.clinicInfo {
+  margin-top: 1.5rem;
+}
+
+.clinicInfo p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.nameBg {
+  color: #113750;
+}
+
+.call{
+  color: #3498db;
+}
+
+.whatsapp {
+color: #089603;
+}
+
+.Arrows {
+  display: flex;
+  position: fixed;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1600px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.Arrows a {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.8rem;
+  color: #2a6496;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.Arrows a:hover {
+  color: #1e4b7b;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .Arrows {
+    width: 100%;
+    bottom: 70px;
+  }
+  
+  .Arrows a {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+  
+
+/* Responsive Styles */
+
+/* Medium devices (tablets, 2 columns) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .conditionColumns, .statsGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
+}
+
+
+/* Small devices (Mobiles) */
+@media (max-width: 767px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+  
+  .doctorCard {
+    flex-direction: column;
+  }
+  
+  .doctorImage {
+    flex: 0 0 auto;
+    height: unset;
+    size-adjust: 70%;
+    
+  }
+  
+  .doctorInfo h3 {
+  font-size: 1.1rem;
+  }
+
+
+  .conditionColumns {
+    grid-template-columns: 1fr; /* 1 item per row */
+  }
+
+  .conditionCol li {
+    font-size: 1rem;
+  }
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ctaTitle {
+  font-size: 1.25rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+
+  .clinicInfo p {
+    font-size: 0.8rem;
+  }
+  .metaItem {
+    font-size: 0.85rem;
+  }
+
+  .approach p {
+    font-size: 0.9rem;
+  }
+
+  .primaryButton, .secondaryButton {
+    width: 90%;
+  }
+  .primaryButton a {
+  font-size: 0.8rem;
+  }
+
+  .secondaryButton a {
+  font-size: 0.8rem;
+  }
+  .Arrows {
+      bottom: 70px; /* Adjust based on footer height */
+    }
+
+  }
+
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.35rem;
+  }
+  
+  .subtitle {
+  font-size: 1rem;
+}
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .ctaTitle {
+  font-size: 1.25rem;
+}
+
+  .meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+
+@media (max-width: 376px) {
+  .primaryButton a {
+font-size: 0.7rem;
+}
+
+.secondaryButton a {
+font-size: 0.7rem;
+}
+.Arrows {
+    bottom: 100px; /* Adjust based on footer height */
+  }
+
+  .cta {
+    width: 100%;
+    padding: 0; 
+  }
+  
+
+}

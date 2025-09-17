@@ -1,0 +1,36 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat (2, 2fr);
+    height: 12rem;
+    border-top: 1px solid #eaeaea;
+    align-items: center;
+    background: linear-gradient(135deg, #2f85d6 0%, #1e4b7b 100%);
+  }
+
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+ }
+
+.mail{
+  font-size: 1.5rem;
+}
+
+.col1, .col2 {
+  text-align: center;
+  margin-top: -5rem;
+  text-align: center;
+}
+
+.span {
+  font-size: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+
+.logo img {
+ filter: invert(1);
+ }
+}

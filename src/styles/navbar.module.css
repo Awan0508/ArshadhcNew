@@ -1,0 +1,63 @@
+.nav {
+    display: flex;
+    position: fixed;
+    background: rgba(255, 255, 255, 0);
+    /* width: max-content; */
+    padding: 0.7rem .7rem;
+    z-index: 1;
+    left: 80%;
+    transform: translateX(-50%);
+    top: 1rem;
+    gap: 1.5rem;
+    /* border-radius: 3rem; */
+    backdrop-filter: blur(70px);
+    border: 1.5px solid rgba(81, 80, 80, 0.849);
+    box-shadow: inset 5x 5x 10x #ffff;
+    transition: var(--transition);
+}
+
+
+ .nav a {
+  color: white;
+  padding: 0.4rem;
+    border-radius: 50%;
+    border-style: solid;
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Beatstreet', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background: var(--color-primary); */
+    /* border-radius: 50%;  */
+    /* background: rgb(245, 253, 255); */
+ }
+
+.nav a:hover {
+    background: rgb(255, 255, 255); 
+    color: var(--color-primary);
+    border: 1px solid rgb(250, 234, 234);
+}
+
+
+.nav a.active {
+  color: var(--color-primary);
+  background: aqua;
+}
+
+
+ 
+ 
+
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 767px) {
+  .nav {
+margin-left: 2rem;
+  }
+}
+
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 320px) {
+    .nav {
+  margin-left: 0rem;
+    }
+  }

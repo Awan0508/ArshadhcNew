@@ -1,0 +1,234 @@
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.whatsapp {
+    color: rgb(3, 231, 26);
+    font-size: 2.25rem;
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    color:  rgba(97, 238, 3, 0.984);
+    transform: scale(90%);
+}
+
+.phone  {
+    padding: 0.2rem;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    /* margin-bottom: 0.25rem; */
+    margin-top: -0.25rem;
+    background: rgb(232, 3, 3);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.phone:hover {
+    color: white;
+    background: rgb(4, 220, 4);
+    transform: scale(90%);
+}
+
+.loc  {
+    padding: 0.2rem;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    /* margin-bottom: 0.25rem; */
+    margin-top: -0.25rem;
+    background: rgb(239, 62, 3);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.loc:hover {
+    color: white;
+    background: rgb(4, 220, 4);
+    transform: scale(90%);
+}
+
+
+.mail  {
+    padding: 0.2rem;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    /* margin-bottom: 0.25rem; */
+    margin-top: -0.25rem;
+    background: rgb(77, 112, 130);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mail:hover {
+    color: white;
+    background: rgb(4, 220, 4);
+    transform: scale(90%);
+}
+
+
+
+
+
+.nav3 {
+    gap: 0.5rem;
+    padding: 0.25rem 0.25rem;
+    z-index: 1;
+    border-radius: 3rem; 
+}
+
+
+.col1, .col2, .col3 {
+    display: flex;
+    width: fit-content;
+    padding: 0rem 0.25rem  0.25rem 0;
+    z-index: 1;
+    position: fixed;
+    border-radius: 1rem;
+    border: .5px;
+    box-shadow: inset 5x 5x 10x #ffff;
+    transition: var(--transition);  
+    top: 4.5rem;
+}
+.col1 {
+    margin-left: -11rem;
+    right: 7rem;
+}
+
+.col2 {
+    margin-left: 0.5rem;
+    right: 2rem;
+}
+
+
+
+.p, .p1{
+font-size: 0.8rem;
+/* margin-bottom: -0.5rem; */
+/* transform: rotate(-90deg); */
+/* margin-right:-4.8rem; */
+/* margin-left: 1rem; */
+background: rgba(21, 147, 2, 0.914);
+backdrop-filter: blur(70px);
+padding: .15rem;
+border-radius: 3px;
+color: white;
+}
+
+/* .p1 {
+    margin-left: 120rem;
+} */
+
+
+ .a {
+    padding: 0.4rem;
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    background: var(--color-primary);
+    border-radius: 50%; 
+ }
+
+.a:hover {
+    color: white;
+    transform: scale(90%);
+}
+
+
+ .call {
+    padding: 0.2rem;
+    display: flex;
+    color: rgb(255, 4, 4);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+ }
+
+ 
+
+
+.activeCall {
+    padding: 0.4rem;
+    display: flex;
+    color: rgb(0, 255, 21);
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  
+  .activeCall:hover {
+    color: rgb(73, 229, 253);
+    transform: scale(90%);
+}
+
+  .activeCallBar {
+    Left: 0;
+    margin-left: -20rem;
+    top: 0.5rem;
+    transition: "all 0.5s ease-in-out";
+    backdrop-filter: blur(70px);
+    z-index: 1; 
+  }
+
+
+  .callBar {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+
+
+  .flexGroup {
+  display: flex;
+  gap: var(--spacing-sm);
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+
+  
+  /* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 767px) {
+    .col1, .col2, .col3 {
+        bottom: 5.2rem;
+    }
+    .flexGroup {
+    flex-direction: flex;
+    gap: var(--spacing-xs);
+    justify-content: space-between;
+    align-items: center;
+  }
+  }
+
+  
+  /* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 320px) {
+    .col1, .col2, .col3 {
+        bottom: 7.5rem;
+    }
+    .nav3 {
+        bottom: 5rem;
+        margin-left: 0.5rem;
+    }
+
+ }
+

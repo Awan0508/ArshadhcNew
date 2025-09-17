@@ -1,0 +1,434 @@
+.section {
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+}
+
+.container {
+    max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h03 , .h02 {
+    text-align: center;
+} 
+
+.h03 {
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+
+.h3 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.blocks { 
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 0.5rem;
+}
+
+.block1 {
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-primary);
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+.block2 { 
+    display: flex;
+    margin-bottom: 0.25rem;
+    margin-top: 2.25rem;
+    margin-left: 2rem;
+}
+
+.block3 { 
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 0.5rem;
+}
+
+.block4 { 
+   padding-bottom: 4rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin-bottom: -1.5rem; 
+    margin-left: -0.5rem;
+    background: rgb(233, 234, 234);
+    
+    width: 157.5%;
+}
+
+
+.closed {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: +1rem; 
+    margin-left: -0.5rem;
+    background: rgb(240, 81, 81);
+    width: 157.5%;
+}
+
+.li {
+    line-height: 1.85rem;
+    margin-left: 1.5rem;
+    width: 100%;
+    padding-top: 1.5rem; 
+    font-size: 0.75rem;
+}
+
+.p {
+    color: rgb(8, 1, 53);
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.p1 {
+    color: rgb(8, 1, 53);
+    margin-left: 6.5rem;
+    font-size: 1rem;
+}
+
+.p2 {
+    color: rgb(8, 1, 53);
+    margin-top: -0.5rem;
+    font-size: 0.9rem;
+}
+
+
+.columns {
+  display: grid;
+  grid-template-columns: 90%;
+  gap: 1rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+  margin-left: 6rem;
+}
+
+.icons {
+    display: flex;
+    margin-top: -1.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: -0.65rem;
+  }
+
+.socials {
+    display: flex;
+    margin-top: -1rem;
+    gap: 0.25rem;
+    justify-content: center;
+  }
+
+.whatsapp {
+    color: rgb(1, 66, 8);
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    color:  rgba(97, 238, 3, 0.984);
+    transform: scale(90%);
+}
+
+.insta {
+    color: rgb(198, 5, 169);
+    font-size: 2rem;
+    margin-left: 0.25rem;
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.insta:hover {
+    color:  rgba(174, 2, 134, 0.984);
+    transform: scale(90%);
+}
+
+.fb {
+    color: rgb(0, 13, 255);
+    font-size: 2rem;
+    margin-left: 0.25rem;
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.fb:hover {
+    color:  rgba(0, 19, 145, 0.984);
+    transform: scale(90%);
+}
+
+.youtube {
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+    margin-left: 0.25rem;
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.youtube:hover {
+    color:  rgba(238, 58, 3, 0.984);
+    transform: scale(90%);
+}
+
+.tiktok {
+    color: rgb(5, 0, 5);
+    font-size: 2rem;
+    margin-left: 0.25rem;
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.tiktok:hover {
+    color: rgb(5, 0, 5);
+    transform: scale(90%);
+}
+
+.phone  {
+    padding: 0.4rem;
+    display: flex;
+    color: rgb(238, 3, 27);
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: -5rem;
+    margin-top: -0.65rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.phone:hover {
+    color: rgba(54, 3, 238, 0.984);
+    transform: scale(90%);
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem;
+    height: 40%;
+    width: 90%;
+}
+
+.col3 {
+    display: grid;
+    gap: 0.5rem;
+    height: 40%;
+    width: 90%;
+}
+
+
+
+
+
+/* =====================FORM========================== */
+
+ 
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-primary);
+    margin: 0.5rem auto;
+    resize: none;
+    font-family: poppins;
+}
+
+
+.submit {
+    background: rgba(255, 0, 0, 0.807);
+    color: var(--color-bg);
+    border: 1px solid rgb(236, 206, 203);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+
+.submit:hover {
+    background: rgb(90, 148, 4);
+    box-shadow: 0 0 10px greenyellow;
+
+}
+
+.mapdiv {
+    width: 100%;
+}
+
+.iframe {
+    width: 97%; 
+    height: 300px;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #014175;
+    transition: var(--transition);
+}
+/*
+.iframe:hover {
+    transform: scale(103%);
+    transition: var(--transition);
+} /*
+ /* ============= MEDIA QUERIES (LARGE DEVICES) ============== */
+ @media screen and (min-width:993px ) and (max-width: 1440px) {
+    .container {
+        height: 100%;
+    }
+    
+    .socials {
+        padding-bottom: 2.25rem;
+      }
+
+    .h02 {
+        font-size: 1.25rem;
+    }  
+
+    .li {
+       font-size: 0.7rem; 
+       width: 100%;
+       line-height: 1.25rem;
+    }
+    .closed {
+        font-size: 0.75rem;
+    }
+
+    .p2 {
+        font-size: 0.8rem;
+    }
+  }
+  
+
+  /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============== */
+  @media screen and (min-width:770px ) and (max-width: 992px){
+
+    .container {
+        height: 100%;
+    }
+    
+    .columns {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .col1 {
+        width: 100%;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+    
+    
+    .col2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+
+    .socials {
+        padding-bottom: 1.25rem;
+      }
+
+
+  }
+  
+  
+  /* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+  @media screen and (max-width: 769px) {
+
+.container {
+    height: 100%;
+}
+
+.columns {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col1 {
+    width: 100%;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+
+.col2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.iframe {
+    width:100%;
+    height: 300px;
+    margin-left: 0.25rem;
+}
+
+.blocks { 
+    grid-template-columns: 1fr;
+}
+
+.block3 { 
+    grid-template-columns: 1fr;
+}
+
+.socials {
+    padding-bottom: 2.5rem;
+   }
+
+  }
+
+
+
+  /* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 320px) {
+
+.s{
+    font-size: 0.5rem;
+}
+
+.closed {
+    font-size: 0.75rem;
+}
+
+.blocks { 
+    grid-template-columns: 1fr;
+}
+
+.block3 { 
+    grid-template-columns: 1fr;
+}
+
+.socials {
+    padding-bottom: 2.5rem;
+   }
+
+  }

@@ -1,0 +1,214 @@
+.section {
+  padding: 5rem 1rem;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #1e4b7b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #1e4b7b, #2c5282);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.systemCard {
+  background: white;
+  border-radius: 16px;
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #38bdf8;
+  margin: 0 auto;
+}
+
+.systemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+.systemTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e4b7b;
+  margin-bottom: 1rem;
+}
+
+.systemDescription {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+
+.doctorCard {
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.doctorCard:hover {
+  transform: translateY(-10px);
+}
+
+.doctorImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border: 2px solid #204422be;
+}
+
+
+.highlight {
+  color: #1e4b7b;
+  font-weight: 600;
+  background: linear-gradient(120deg, #e0f2fe 0%, #bae6fd 100%);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.icons {
+    display: flex;
+    margin-top: -1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whatsapp {
+    color: rgb(1, 66, 8);
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    color:  rgba(64, 155, 3, 0.984);
+    transform: scale(90%);
+}
+
+.phone  {
+    display: flex;
+    color: rgb(5, 8, 179);
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: -0.7rem;
+}
+
+.phone:hover {
+    color: rgba(4, 190, 20, 0.984);
+    transform: scale(90%);
+}
+
+.icon {
+    color: white;
+    margin-top: 1rem;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    .title {
+    font-size: 2.4rem;
+  }
+    .comparisonGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  }
+  
+ 
+
+ @media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  
+ /* .container {
+    width: 95%;
+    height: 100%;
+ } */
+ 
+    
+    .comparisonGrid {
+    grid-template-columns: 1fr;
+  }
+
+  }
+  
+  
+
+@media (max-width: 480px) {
+
+    .title {
+    font-size: 1.8rem;
+  }
+
+   .subtitle {
+    font-size: 0.9rem;
+  }
+
+
+.doctorImage {
+  width: 150px;
+  height: 150px;
+}
+
+}

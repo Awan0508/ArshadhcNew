@@ -1,0 +1,251 @@
+.section {
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+  /* background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #1e4b7b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #1e4b7b, #2c5282);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.systemCard {
+  background: white;
+  border-radius: 16px;
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #38bdf8;
+}
+
+.systemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f9ff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.systemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.systemTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e4b7b;
+  margin-bottom: 1rem;
+}
+
+.systemDescription {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureItem {
+  padding: 0.5rem 0;
+  color: #475569;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.featureItem::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.homeopathyFocus {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.focusHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.focusTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #1e4b7b, #2c5282);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.focusSubtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.factsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.factCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.factCard:hover {
+  background: #f0f9ff;
+}
+
+.factNumber {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #1e4b7b, #38bdf8);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.factText {
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.4rem;
+  }
+  
+  .comparisonGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .systemCard {
+    padding: 1.5rem;
+  }
+  
+  .homeopathyFocus {
+    padding: 2rem;
+  }
+  
+  .factsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .intro {
+    font-size: 1rem;
+  }
+  
+  .comparisonGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .systemCard {
+    padding: 1.2rem;
+  }
+  
+  .imageContainer {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .systemImage {
+    width: 50px;
+    height: 50px;
+  }
+}

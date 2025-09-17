@@ -1,0 +1,10 @@
+.section {
+  padding: 5rem 1rem;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
