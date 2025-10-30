@@ -125,8 +125,8 @@ const aboutUs = () => {
             <h2 className={styles.sectionTitle}>Why Choose Our Homeopathic Treatment?</h2> 
           
            <p className={styles.introParagraph}>
-                Many believe homeopathy is a <span className={styles.highlight}>slow or weak treatment</span>, 
-                but clinical evidence reveals a different reality
+                Many believe homeopathy is a slow or weak treatment, 
+                but <span className={styles.highlight}> clinical evidence reveals a different reality </span>
               </p>
           </motion.div>
           
