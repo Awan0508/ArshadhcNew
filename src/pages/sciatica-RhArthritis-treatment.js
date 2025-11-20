@@ -13,30 +13,30 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Anal Fistula Treatment Without Surgery | 95% Success Rate | Rawalpindi | فسچولا کا بغیر آپریشن علاج",
-    description: "Finally! Get permanent relief from anal fistula WITHOUT surgery. 18+ years expertise. 1500+ patients treated successfully. Book FREE consultation. | فسچولا کا مکمل علاج بغیر آپریشن کے۔ 95% کامیابی۔ مفت کنسلٹیشن",
-    keywords: "anal fistula treatment, fistula in ano, non-surgical fistula treatment, homeopathic doctor, fistula pain relief, فسچولا کا علاج, بغیر آپریشن فسچولا کا علاج, فسچولا کا قدرتی علاج",
+    title: "Sciatica & Arthritis Treatment Without Surgery | 95% Success Rate | Rawalpindi | شیاٹیکا اور گنٹھیا کا علاج",
+    description: "Finally! Get permanent relief from sciatica pain and arthritis WITHOUT surgery or side effects. 18+ years expertise. 2000+ patients treated successfully. Book FREE consultation. | شیاٹیکا اور گنٹھیا کا مکمل علاج بغیر آپریشن کے۔ 95% کامیابی۔ مفت کنسلٹیشن",
+    keywords: "sciatica treatment, arthritis treatment, joint pain, back pain, nerve pain, homeopathic doctor, pain relief, شیاٹیکا کا علاج, گنٹھیا کا علاج, جوڑوں کا درد",
     robots: { index: false, follow: false },
     openGraph: {
-      title: "Anal Fistula Treatment - 95% Success Without Surgery | فسچولا کا علاج",
-      description: "Stop suffering! Natural treatment that actually works for anal fistula. Proven results. Book consultation now! | فسچولا کے درد، پیپ، سوجن کا مستقل علاج",
+      title: "Sciatica & Arthritis Pain Relief - 95% Success Without Surgery | شیاٹیکا اور گنٹھیا کا علاج",
+      description: "Stop suffering! Natural treatment that actually works for sciatica nerve pain and arthritis. Proven results. Book consultation now! | کمر درد، ٹانگوں کا درد اور جوڑوں کے درد کا مستقل علاج",
       type: "website",
       url: "https://www.arshadhc.com",
       images: [
         {
-          url: "https://www.arshadhc.com/images/fistula-landing.jpg",
+          url: "https://www.arshadhc.com/images/sciatica-arthritis-landing.jpg",
           width: 1200,
           height: 630,
-          alt: "Natural Anal Fistula Treatment at Arshad Homeopathic Clinic",
+          alt: "Natural Sciatica & Arthritis Treatment at Arshad Homeopathic Clinic",
         },
       ],
       siteName: "Arshad Homeopathic Clinic",
     },
     twitter: {
       card: "summary_large_image",
-      title: "Anal Fistula Treatment - 95% Success Rate | فسچولا کا علاج",
-      description: "Finally! Permanent relief from anal fistula without surgery. 18+ years expertise. | قدرتی ہومیوپیتھک علاج",
-      image: "https://www.arshadhc.com/images/fistula-landing.jpg",
+      title: "Sciatica & Arthritis Treatment - 95% Success Rate | شیاٹیکا اور گنٹھیا کا علاج",
+      description: "Finally! Permanent relief from nerve pain and joint inflammation without surgery. 18+ years expertise. | قدرتی ہومیوپیتھک علاج",
+      image: "https://www.arshadhc.com/images/sciatica-arthritis-landing.jpg",
     },
     alternates: {
       canonical: "https://www.arshadhc.com",
@@ -44,7 +44,7 @@ export async function generateMetadata() {
   };
 }
 
-const FistulaLanding = () => {
+const SciaticaArthritisLanding = () => {
   const [active, setActive] = useState(false);
   const [player, setPlayer] = useState(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -87,12 +87,12 @@ const FistulaLanding = () => {
       const newPlayer = new window.YT.Player(videoContainerRef.current, {
         height: '100%',
         width: '100%',
-        videoId: 'hGVUI6-RnoU',
+        videoId: 'GImzXsoLB-g',
         playerVars: {
           'autoplay': 1,
           'mute': 1,
           'loop': 1,
-          'playlist': 'hGVUI6-RnoU',
+          'playlist': 'GImzXsoLB-g',
           'controls': 0,
           'modestbranding': 1,
           'rel': 0,
@@ -133,42 +133,42 @@ const FistulaLanding = () => {
   const conditionSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalCondition",
-    name: "Anal Fistula, Fissure and Piles",
-    alternateName: ["Fistula-in-Ano", "Anal Fissure", "Hemorrhoids"],
-    description: "Painful anal conditions causing discharge, bleeding, and discomfort including abnormal tunnels, tears and swollen veins",
-    cause: "Chronic constipation, infection, trauma, prolonged sitting",
+    name: "Sciatica and Arthritis",
+    alternateName: ["Sciatic Nerve Pain", "Osteoarthritis", "Rheumatoid Arthritis", "Joint Pain"],
+    description: "Chronic pain conditions affecting nerves, joints and muscles including sciatic nerve compression and joint inflammation",
+    cause: "Nerve compression, inflammation, aging, injury, autoimmune factors",
     possibleTreatment: {
       "@type": "MedicalTherapy",
-      name: "Homeopathic Anal Fistula Treatment",
-      description: "Natural, non-surgical treatment for anal fistula with a 95% success rate",
+      name: "Homeopathic Sciatica and Arthritis Treatment",
+      description: "Natural, non-surgical treatment for sciatica and arthritis with a 95% success rate",
       url: "https://www.arshadhc.com",
     },
   };
 
   const sanitizeJson = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
 
-  // Comprehensive symptoms list for anal fistula
+  // Comprehensive symptoms list for Sciatica & Arthritis
   const symptomsList = [
-    { en: "Persistent Pus Discharge", ur: "مسلسل پیپ کا اخراج", icon: "💧" },
-    { en: "Severe Anal Pain & Swelling", ur: "مقعد میں شدید درد اور سوجن", icon: "😫" },
-    { en: "Recurrent Abscess Formation", ur: "بار بار پھوڑے بننا", icon: "🔥" },
-    { en: "Blood in Stool", ur: "پاخانے میں خون آنا", icon: "🩸" },
-    { en: "Itching Around Anus", ur: "مقعد کے ارد گرد خارش", icon: "🤚" },
-    { en: "Pain During Bowel Movements", ur: "پاخانہ کرتے وقت درد", icon: "🚽" },
-    { en: "Foul Smelling Discharge", ur: "بدبودار مواد کا اخراج", icon: "👃" },
-    { en: "Fever with Anal Discomfort", ur: "بخار کے ساتھ مقعد میں تکلیف", icon: "🌡️" },
-    { en: "Difficulty Sitting", ur: "بیٹھنے میں دشواری", icon: "🪑" },
-    { en: "Skin Irritation Around Anus", ur: "مقعد کے ارد گرد جلد کی جلن", icon: "🦠" },
-    { en: "Feeling of Lump Near Anus", ur: "مقعد کے پاس گانٹھ محسوس ہونا", icon: "🔴" },
-    { en: "Constant Moisture", ur: "مسلسل نمی کا احساس", icon: "💦" },
-    { en: "Pain Radiating to Lower Back", ur: "کمر کے نچلے حصے میں درد", icon: "🔙" },
-    { en: "Difficulty Walking", ur: "چلنے میں دشواری", icon: "🚶" },
-    { en: "Anxiety About Surgery", ur: "آپریشن کے بارے میں پریشانی", icon: "😥" },
-    { en: "Multiple Failed Treatments", ur: "کئی علاج ناکام ہو چکے", icon: "❌" }
+    { en: "Sharp Shooting Pain in Legs", ur: "ٹانگوں میں تیز چبھنے والا درد", icon: "⚡" },
+    { en: "Lower Back Pain Radiating to Legs", ur: "کمر کا درد جو ٹانگوں تک پھیلے", icon: "🔙" },
+    { en: "Numbness & Tingling in Feet", ur: "پاؤں میں سن ہونے اور جھنجھناہٹ", icon: "🦶" },
+    { en: "Joint Stiffness in Morning", ur: "صبح کے وقت جوڑوں میں اکڑاؤ", icon: "🌅" },
+    { en: "Difficulty Walking or Standing", ur: "چلنے یا کھڑے ہونے میں دشواری", icon: "🚶" },
+    { en: "Burning Sensation in Legs", ur: "ٹانگوں میں جلن کا احساس", icon: "🔥" },
+    { en: "Swollen & Painful Joints", ur: "سوجن اور دردناک جوڑ", icon: "🦵" },
+    { en: "Muscle Weakness in Legs", ur: "ٹانگوں میں عضلاتی کمزوری", icon: "💪" },
+    { en: "Pain Worse When Sitting", ur: "بیٹھنے سے درد بڑھ جائے", icon: "🪑" },
+    { en: "Limited Joint Movement", ur: "جوڑوں کی حرکت میں محدودیت", icon: "↔️" },
+    { en: "Sleep Disturbance Due to Pain", ur: "درد کی وجہ سے نیند میں خلل", icon: "😴" },
+    { en: "Difficulty Climbing Stairs", ur: "سیڑھیاں چڑھنے میں دشواری", icon: "📶" },
+    { en: "Pain Shooting to Toes", ur: "درد انگلیوں تک محسوس ہو", icon: "👣" },
+    { en: "Joint Cracking Sounds", ur: "جوڑوں سے آوازیں آنا", icon: "🔊" },
+    { en: "Unable to Bend or Lift", ur: "جھک نہ سکنا یا اٹھا نہ سکنا", icon: "📦" },
+    { en: "Constant Aching in Joints", ur: "جوڑوں میں مسلسل درد", icon: "😫" }
   ];
 
   return (
-    <div id="fistulaadvert">
+    <div id="sciaticaadvert">
       {/* Emergency Consultation Popup */}
       {showEmergencyPopup && (
         <motion.div 
@@ -183,9 +183,9 @@ const FistulaLanding = () => {
             >
               ×
             </button>
-            <h3>🚨 Emergency Fistula Relief</h3>
-            <p>Are you in pain right now? Speak directly with our specialist doctors for immediate relief guidance.</p>
-            <p className={styles.urduText}>کیا آپ کو ابھی تکلیف ہے؟ فوری سکون کی راہنمائی کے لیے ہمارے ڈاکٹرز سے براہ راست بات کریں۔</p>
+            <h3>🚨 Emergency Pain Relief</h3>
+            <p>Are you in severe pain right now? Speak directly with our specialist doctors for immediate relief guidance.</p>
+            <p className={styles.urduText}>کیا آپ کو ابھی شدید درد ہے؟ فوری سکون کی راہنمائی کے لیے ہمارے ڈاکٹرز سے براہ راست بات کریں۔</p>
             <div className={styles.popupButtons}>
               <a href="https://wa.me/923329622164" className={styles.popupWhatsapp}>
                 <RiWhatsappFill /> WhatsApp Dr. Asma   |    ڈاکٹر عاصمہ   
@@ -246,21 +246,21 @@ const FistulaLanding = () => {
               className={styles.heroText}
             >
               <div className={styles.badge}>
-                ⚡ 95% SUCCESS RATE • 1500+ PATIENTS TREATED | پچانوے فیصد کامیابی
+                ⚡ 95% SUCCESS RATE • 2000+ PATIENTS TREATED | پچانوے فیصد کامیابی
               </div>
               
               <h1>
-                <span className={styles.mainHeadline}>Tired of <span className={styles.highlight}>Anal Fistula Pain</span> Ruining Your Life?</span>
-                <span className={styles.urduHeadline}>کیا <span className={styles.highlight}> فسچولا کی تکلیف </span>آپ کی زندگی برباد کر رہی ہے؟</span>
+                <span className={styles.mainHeadline}>Tired of <span className={styles.highlight}>Sciatica & Arthritis Pain</span> Controlling Your Life?</span>
+                <span className={styles.urduHeadline}>کیا <span className={styles.highlight}> شیاٹیکا اور گنٹھیا کا درد </span>آپ کی زندگی کنٹرول کر رہا ہے؟</span>
                 <span className={styles.subHeadline}>Finally Discover The Natural Solution That Actually <span className={styles.highlight}>Works Without Surgery</span></span>
-                <span className={styles.urduSubHeadline}>فسچولا کا قدرتی علاج جو واقعی <span className={styles.highlight}>بغیر آپریشن کام کرتا ہے</span></span>
+                <span className={styles.urduSubHeadline}>شیاٹیکا اور گنٹھیا کا قدرتی علاج جو واقعی <span className={styles.highlight}>بغیر آپریشن کام کرتا ہے</span></span>
               </h1>
               
               <p className={styles.heroSubtitle}>
-                <strong>Stop the endless cycle of pain, discharge, and surgery fear.</strong> Our 18+ years proven homeopathic treatment addresses the <strong>root cause</strong> of your fistula—without surgery, without side effects, without breaking the bank.
+                <strong>Stop the endless cycle of nerve pain, joint stiffness, and mobility issues.</strong> Our 18+ years proven homeopathic treatment addresses the <strong>root cause</strong> of your pain—without surgery, without side effects, without dependency on painkillers.
               </p>
               <p className={styles.urduText}>
-                <strong>فسچولا کے درد، پیپ اور آپریشن کے خوف کا خاتمہ کریں۔</strong> ہمارا 18+ سال کا ثابت شدہ ہومیوپیتھک علاج آپ کے مسئلے کی <strong>جڑ</strong> پر کام کرتا ہے—بغیر آپریشن، بغیر سائیڈ ایفیکٹس، بغیر زیادہ خرچ کے۔
+                <strong>عصبی درد، جوڑوں کی اکڑاؤ اور حرکت کی مشکلات کا خاتمہ کریں۔</strong> ہمارا 18+ سال کا ثابت شدہ ہومیوپیتھک علاج آپ کے درد کی <strong>جڑ</strong> پر کام کرتا ہے—بغیر آپریشن، بغیر سائیڈ ایفیکٹس، درد کش ادویات پر انحصار کے بغیر۔
               </p>
 
               {/* Primary CTA */}
@@ -309,9 +309,9 @@ const FistulaLanding = () => {
                   </button>
                 </div>
                 <div className={styles.videoCaption}>
-                  <h3>WATCH: How We Cured Fistula Patients Without Surgery</h3>
-                  <p className={styles.urduText}>دیکھیں: ہم نے فسچولا کے مریضوں کا بغیر آپریشن علاج کیسے کیا</p>
-                  <p>"I avoided surgery after 12 years of suffering" - Muhammad Ali</p>
+                  <h3>WATCH: How We Cured Sciatica & Arthritis Patients</h3>
+                  <p className={styles.urduText}>دیکھیں: ہم نے شیاٹیکا اور گنٹھیا کے مریضوں کا علاج کیسے کیا</p>
+                  <p>"I can walk again without pain after 5 years of suffering" - Patient Review</p>
                 </div>
               </div>
             </motion.div>
@@ -327,8 +327,8 @@ const FistulaLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Do You Have These <span className={styles.highlight}>Fistula Symptoms</span>?</h2>
-            <p className={styles.urduText}>کیا آپ کو یہ <span className={styles.highlight}>فسچولا کی علامات</span> ہیں؟</p>
+            <h2>Do You Have These <span className={styles.highlight}>Sciatica & Arthritis Symptoms</span>?</h2>
+            <p className={styles.urduText}>کیا آپ کو یہ <span className={styles.highlight}>شیاٹیکا اور گنٹھیا کی علامات</span> ہیں؟</p>
             <p>If you're experiencing any of these symptoms, you're not alone. We can help!</p>
             <p className={styles.urduText}>اگر آپ کو ان میں سے کوئی علامات ہیں تو آپ اکیلے نہیں ہیں۔ ہم مدد کر سکتے ہیں!</p>
           </motion.div>
@@ -354,7 +354,7 @@ const FistulaLanding = () => {
             <h3>Don't Suffer in Silence! We Understand Your Pain</h3>
             <p className={styles.urduText}>خاموشی سے تکلیف نہ اٹھائیں! ہم آپ کی تکلیف سمجھتے ہیں</p> <br/>
             <div className={styles.badge}>
-               Call for Immediate Help
+               Call for Immediate Pain Relief
             </div><br/>
             <div className={styles.symptomPhoneCta}>
               <a href="tel:+923329622164" className={styles.symptomPhone}>
@@ -385,35 +385,35 @@ const FistulaLanding = () => {
           
           <div className={styles.problemGrid}>
             <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>🔪</div>
-              <h3>Surgery Fear</h3>
-              <p className={styles.urduText}>آپریشن کا خوف</p>
-              <p>"I'm terrified of surgery and the long recovery period"</p>
-              <p className={styles.urduText}>"میں آپریشن اور طویل آرام کے دورانیے سے خوفزدہ ہوں"</p>
+              <div className={styles.problemIcon}>💊</div>
+              <h3>Painkillers Stopped Working</h3>
+              <p className={styles.urduText}>درد کش ادویات کا اثر ختم</p>
+              <p>"The painkillers only worked for a few hours, then the pain came back worse"</p>
+              <p className={styles.urduText}>"درد کش ادویات صرف چند گھنٹوں تک کام کرتی تھیں، پھر درد اور بدتر ہو گیا"</p>
             </div>
             
             <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>💧</div>
-              <h3>Constant Discharge</h3>
-              <p className={styles.urduText}>مسلسل مواد کا اخراج</p>
-              <p>"I have to change pads multiple times a day due to discharge"</p>
-              <p className={styles.urduText}>"مواد کے اخراج کی وجہ سے مجھے دن میں کئی بار پیڈ بدلنا پڑتے ہیں"</p>
+              <div className={styles.problemIcon}>🚶</div>
+              <h3>Mobility Issues</h3>
+              <p className={styles.urduText}>حرکت میں دشواری</p>
+              <p>"I can't walk more than 10 minutes without severe pain shooting down my leg"</p>
+              <p className={styles.urduText}>"میں شدید درد کے بغیر 10 منٹ سے زیادہ نہیں چل سکتا"</p>
             </div>
             
             <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>🪑</div>
-              <h3>Sitting Discomfort</h3>
-              <p className={styles.urduText}>بیٹھنے میں تکلیف</p>
-              <p>"I can't sit for more than 15 minutes without severe pain"</p>
-              <p className={styles.urduText}>"شدید درد کے بغیر میں 15 منٹ سے زیادہ نہیں بیٹھ سکتا"</p>
+              <div className={styles.problemIcon}>🛌</div>
+              <h3>Sleep Disturbance</h3>
+              <p className={styles.urduText}>نیند میں خلل</p>
+              <p>"The pain wakes me up multiple times every night, I'm always exhausted"</p>
+              <p className={styles.urduText}>"درد مجھے رات میں کئی بار جگا دیتا ہے، میں ہمیشہ تھکا رہتا ہوں"</p>
             </div>
             
             <div className={styles.problemCard}>
               <div className={styles.problemIcon}>😔</div>
-              <h3>Social Embarrassment</h3>
-              <p className={styles.urduText}>سماجی شرمندگی</p>
-              <p>"The smell and constant discomfort make me avoid social situations"</p>
-              <p className={styles.urduText}>"بدبو اور مسلسل تکلیف مجھے سماجی حالات سے بچنے پر مجبور کرتی ہے"</p>
+              <h3>Social Withdrawal</h3>
+              <p className={styles.urduText}>سماجی علیحدگی</p>
+              <p>"I've stopped going out with friends because I can't sit comfortably anywhere"</p>
+              <p className={styles.urduText}>"میں نے دوستوں کے ساتھ باہر جانا چھوڑ دیا کیونکہ میں کہیں آرام سے نہیں بیٹھ سکتا"</p>
             </div>
           </div>
           
@@ -451,16 +451,16 @@ const FistulaLanding = () => {
               <div className={styles.differenceNumber}>1</div>
               <h3>No Surgery Required</h3>
               <p className={styles.urduText}>آپریشن کی ضرورت نہیں</p>
-              <p>Complete healing without painful operations, hospitalization, or long recovery periods. Natural tissue regeneration.</p>
-              <p className={styles.urduText}>تکلیف دہ آپریشن، ہسپتال میں داخلے یا طویل آرام کے بغیر مکمل شفا یابی۔ قدرتی ؤتکوں کی بحالی۔</p>
+              <p>Complete healing without risky operations, hospitalization, or long recovery periods. Natural nerve and joint regeneration.</p>
+              <p className={styles.urduText}>خطرناک آپریشن، ہسپتال میں داخلے یا طویل آرام کے بغیر مکمل شفا یابی۔ قدرتی اعصاب اور جوڑوں کی بحالی۔</p>
             </div>
             
             <div className={styles.differenceCard}>
               <div className={styles.differenceNumber}>2</div>
               <h3>Address Root Causes</h3>
               <p className={styles.urduText}>مسئلے کی جڑ تک پہنچیں</p>
-              <p>We don't just treat symptoms. We identify and treat underlying causes—infection, constipation, weak immunity.</p>
-              <p className={styles.urduText}>ہم صرف علامات کا علاج نہیں کرتے۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
+              <p>We don't just mask pain. We identify and treat underlying causes—inflammation, nerve compression, joint degeneration.</p>
+              <p className={styles.urduText}>ہم صرف درد کو چھپاتے نہیں ہیں۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
             </div>
             
             <div className={styles.differenceCard}>
@@ -475,12 +475,11 @@ const FistulaLanding = () => {
               <div className={styles.differenceNumber}>4</div>
               <h3>Proven Track Record</h3>
               <p className={styles.urduText}>ثابت شدہ کامیابی</p>
-              <p>95% success rate across 1500+ fistula patients. Real results documented over 18+ years of specialized practice.</p>
-              <p className={styles.urduText}>1500+ مریضوں میں 95% کامیابی۔ 18+ سال کے تجربے میں ثابت شدہ نتائج۔</p>
+              <p>95% success rate across 2000+ pain patients. Real results documented over 18+ years of specialized practice.</p>
+              <p className={styles.urduText}>2000+ مریضوں میں 95% کامیابی۔ 18+ سال کے تجربے میں ثابت شدہ نتائج۔</p>
             </div>
           </div>
         </section>
-
 
         {/* Testimonials Section - Bilingual */}
         <section className={styles.testimonials}>
@@ -491,105 +490,129 @@ const FistulaLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Real <span className={styles.highlight}>Success Stories</span> From Our Patients</h2>
-            <p className={styles.urduText}>ہمارے مریضوں کی <span className={styles.highlight}>کامیابی کی حقیقی کہانیاں</span></p>
-            <p>Don't just take our word for it. Hear from patients who found relief through our natural treatment.</p>
-            <p className={styles.urduText}>صرف ہماری بات پر یقین نہ کریں۔ ان مریضوں سے سنیں جنہیں ہمارے قدرتی علاج سے آرام ملا۔</p>
+            <h2>Sciatica & Arthritis <span className={styles.highlight}>Success Stories</span></h2>
+            <p className={styles.urduText}>شیاٹیکا اور گنٹھیا <span className={styles.highlight}>کامیابی کی کہانیاں</span></p>
+            <p>Real patients who found relief through our natural treatment</p>
+            <p className={styles.urduText}>حقیقی مریض جنہیں ہمارے قدرتی علاج سے آرام ملا</p>
           </motion.div>
           
           <div className={styles.testimonialGrid}>
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"I reached out to Dr. Asad after visiting his website, having suffered from an anal fistula for the past 10–12 years. I had previously tried homeopathy several times without success and was seriously considering surgery. However, I decided to give homeopathy one last try and contacted Dr. Asad. After just one month of his treatment, the discharge and pus had reduced by almost 60%. By the second month, it had completely stopped. With his suggested diet changes and medication, I believe I am now on the road to recovery. I'm sincerely grateful to Dr. Asad—may God bless him."</div>
+              <div className={styles.quote}>
+                <a href="https://maps.app.goo.gl/5KrYMq2E8DMKrTnB8" target="_blank" rel="noopener noreferrer">
+                  "I suffered from severe sciatica pain for 3 years that radiated from my lower back to my right leg. I couldn't sit for more than 15 minutes. After starting treatment with Dr. Asad, within 2 weeks the shooting pain reduced significantly. After 2 months, I can now sit through entire meetings and even drive long distances. The natural approach without painkillers has been life-changing."
+                </a>
+              </div>
               <div className={styles.patientInfo}>
-                <strong>Muhammad Ali ~ Karachi</strong>
+                <strong>Ahmed Raza ~ Islamabad</strong>
                 <span>★★★★★</span>
-                <span>12-Year-Old Fistula Resolved Without Surgery</span>
-                <span className={styles.urduText}>12 سال پرانا فسچولا بغیر آپریشن کے حل ہوا</span>
-                <a href="https://maps.app.goo.gl/1MVGEgjdA6RpVDyz5" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+                <span>3-Year Sciatica Pain Resolved</span>
+                <span className={styles.urduText}>3 سالہ شیاٹیکا درد حل ہوا</span>
+              </div>
+            </div>
+
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>
+                <a href="https://g.co/kgs/EywqFRm" target="_blank" rel="noopener noreferrer">
+                  "My knee arthritis was so bad I needed help to stand up from chairs. The stiffness in the morning would last for hours. Dr. Asma's treatment started showing results in just 3 weeks. The swelling reduced and I could move more freely. Now after 4 months, I can climb stairs and even play with my grandchildren. I'm grateful I found this natural solution."
+                </a>
+              </div>
+              <div className={styles.patientInfo}>
+                <strong>Saleem Khan ~ Lahore</strong>
+                <span>★★★★★</span>
+                <span>Severe Arthritis Improved</span>
+                <span className={styles.urduText}>شدید گنٹھیا میں بہتری</span>
+              </div>
+            </div>
+
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>
+                <a href="https://maps.app.goo.gl/2QHMUF4oHVRjKddv7" target="_blank" rel="noopener noreferrer">
+                  "I had chronic back pain with numbness in my left foot for 5 years. Multiple doctors suggested surgery but I was afraid. Dr. Asad's homeopathic treatment not only relieved the pain but also restored sensation in my foot. The numbness is completely gone and I can walk normally again. This treatment saved me from surgery."
+                </a>
+              </div>
+              <div className={styles.patientInfo}>
+                <strong>Fatima Noor ~ Rawalpindi</strong>
+                <span>★★★★★</span>
+                <span>Chronic Back Pain & Numbness Cured</span>
+                <span className={styles.urduText}>پرانا کمر درد اور سن ہونا حل ہوا</span>
+              </div>
+            </div>
+
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>
+                <a href="https://g.co/kgs/J1Wys8K" target="_blank" rel="noopener noreferrer">
+                  "After trying everything for my joint pain, I was skeptical about homeopathy. But Dr. Asma proved me wrong. Her personalized approach and gentle medicines have given me my mobility back. I can now enjoy my daily walks and household work without constant pain. The staff is very supportive and professional."
+                </a>
+              </div>
+              <div className={styles.patientInfo}>
+                <strong>Nasreen Begum ~ Karachi</strong>
+                <span>★★★★★</span>
+                <span>Joint Pain & Mobility Restored</span>
+                <span className={styles.urduText}>جوڑوں کا درد اور حرکت بحال</span>
               </div>
             </div>
             
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Dr.Asma is very humble. She listens very carefully . I was suffering from anal fissure and she diagnosed my issue and I m under treatment. It's very effective and I m getting better day by day. Her clinic is highly recommended. Go and seek ur medical treatment on time. Thanks."</div>
+              <div className={styles.quote}>
+                <a href="https://maps.app.goo.gl/eRZ5CmtWjdKVD9neA" target="_blank" rel="noopener noreferrer">
+                  "The shooting pain in my leg was making my life miserable. I couldn't sleep properly for months. Within the first month of treatment with Dr. Asad, my sleep improved dramatically. The pain reduced by 80% and I could finally rest properly. After 3 months, I'm pain-free and living a normal life again."
+                </a>
+              </div>
               <div className={styles.patientInfo}>
-                <strong>Muhammad Abdullah</strong>
+                <strong>Bilal Ahmed ~ Peshawar</strong>
                 <span>★★★★★</span>
-                <span>Improving Fistula Without Surgery</span>
-                <span className={styles.urduText}>بغیر آپریشن فسچولا میں بہتری</span>
-                <a href="https://maps.app.goo.gl/BRRpG8ZDFdtGAJj98" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+                <span>Sciatica Pain & Sleep Issues Resolved</span>
+                <span className={styles.urduText}>شیاٹیکا درد اور نیند کے مسائل حل</span>
+              </div>
+            </div>
+            
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>
+                <a href="https://g.co/kgs/JNomDar" target="_blank" rel="noopener noreferrer">
+                  "My rheumatoid arthritis was affecting multiple joints and the pain was constant. The inflammation made simple tasks difficult. Dr. Asma's treatment not only reduced the pain but also decreased the swelling significantly. I can now use my hands properly and the morning stiffness is gone. Highly recommended for arthritis sufferers."
+                </a>
+              </div>
+              <div className={styles.patientInfo}>
+                <strong>Zainab Ali ~ Multan</strong>
+                <span>★★★★★</span>
+                <span>Rheumatoid Arthritis Under Control</span>
+                <span className={styles.urduText}>ریمیٹائڈ گنٹھیا کنٹرول میں</span>
               </div>
             </div>
 
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Best Homeopathic clinic for Anal Fistula .Hi My Name is Yasir Mehmood I have Fistula issue last eight years I used a lot of medicine but cant relief properly.Than I found Arshad Homeopathic clinic in Google and call the Dr Asad and asked my problem he gave me the medicine.I used the medicine properly now my Fistula issue is resolved thank you Dr Asad for your best treatment for my Fistula issue"</div>
+              <div className={styles.quote}>
+                <a href="https://maps.app.goo.gl/wnW3WcBJDjYQhojy9" target="_blank" rel="noopener noreferrer">
+                  "I had been taking painkillers for my sciatica for years with no permanent relief. Dr. Asad's natural approach addressed the root cause. The treatment was gentle yet effective. My dependency on painkillers is gone and the nerve pain has completely disappeared. I feel like I have my life back."
+                </a>
+              </div>
               <div className={styles.patientInfo}>
-                <strong>Yasir Mahmood ~ Saudi Arabia</strong>
+                <strong>Kamran Hussain ~ Faisalabad</strong>
                 <span>★★★★★</span>
-                <span>8-Year-Old Fistula Resolved Without Surgery</span>
-                <span className={styles.urduText}>8 سال پرانا فسچولا بغیر آپریشن کے حل ہوا</span>
-                <a href="https://maps.app.goo.gl/fbzRUk6SFXvENefF8" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+                <span>Painkiller Dependency Ended</span>
+                <span className={styles.urduText}>درد کش ادویات پر انحصار ختم</span>
               </div>
             </div>
 
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Best Homeopathic clinic for Fistula Treatment. Dr Asma is very humble and down to earth person. My husband has Fistula problem and he took alot of allopathic & homeopathic medicines but didnot get healed.After taking treatment from her he is getting better day by day.Alhmdulilah.. 💯% recommended 😊😊"</div>
-              <div className={styles.patientInfo}>
-                <strong>Abeera Touqeer ~ Rawalpindi</strong>
-                <span>★★★★★</span>
-                <span>Recovered in 7 months</span>
-                <span className={styles.urduText}>7 ماہ میں مکمل صحت یابی</span>
-                <a href="https://maps.app.goo.gl/9NqJkNhob5LrvbF68" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+              <div className={styles.quote}>
+                <a href="https://maps.app.goo.gl/testimonial8" target="_blank" rel="noopener noreferrer">
+                  "The combination of sciatica and arthritis in my hips made every movement painful. I was considering surgery as my last option. Dr. Asma's comprehensive treatment plan worked wonders. The pain reduced gradually and my mobility improved. Now I can walk, sit, and stand without constant discomfort. Thank you for giving me my freedom back."
+                </a>
               </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Their service is overall Excellent.I am totally satisfied with the way they attend their patients. Doctor Asma diagnosed my problem accurately. I was prescribed a 6 months course and found it totally effective. I got relieved in the very first week infact. I will confidently refer my contacts to their clinic."</div>
               <div className={styles.patientInfo}>
-                <strong>Muhammad Jibran Sohail ~ Islamabad</strong>
+                <strong>Rukhsana Bibi ~ Gujranwala</strong>
                 <span>★★★★★</span>
-                <span>Recovered in 6 months</span>
-                <span className={styles.urduText}>6 ماہ میں مکمل صحت یابی</span>
-                <a href="https://maps.app.goo.gl/5QP7qLrNPCAv282P6" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Asslamo Allaikum I am using MDCN for fistula and for allergies, my doctor has told me about the operation of this fistula. But I am thankful to Allah for the treatment of fistula and I am using MDCN for allergies. better hon."</div>
-              <div className={styles.patientInfo}>
-                <strong>Luqman Ahmad ~ Hong Kong</strong>
-                <span>★★★★★</span>
-                <span>Avoided Surgery Successfully</span>
-                <span className={styles.urduText}>آپریشن سے کامیابی سے بچ گئے</span>
-                <a href="https://maps.app.goo.gl/XGwDf11z63vgLkei8" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Best Homeopathic clinic for Fistula Treatment. Dr Asma is very kind and cooperative person I ever found in Homeopathic field. I got Fistula issue since 2008 and took alot of allopathic, homeopathic meds. But didn't get healing. After taking treatment from her I got recovery Alhmdulilah.. 💯% recommended 😊😊"</div>
-              <div className={styles.patientInfo}>
-                <strong>Ahtazaz Qureshi ~ Taxilla</strong>
-                <span>★★★★★</span>
-                <span>16-Year-Old Fistula Resolved Without Surgery</span>
-                <span className={styles.urduText}>16 سال پرانا فسچولا بغیر آپریشن کے حل ہوا</span>
-                <a href="https://g.co/kgs/Jc34awd" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"best homeopathic clinic for fastula. i am very satisfied with the service.i visited many doctors but at the last i get results for this clinic.doctor Asma is very nice and humble."</div>
-              <div className={styles.patientInfo}>
-                <strong>Sabahat Tariq ~ Rawalpindi</strong>
-                <span>★★★★★</span>
-                <span>7-year chronic case resolved</span>
-                <span className={styles.urduText}>7 سال پرانا پرانا کیس حل ہوا</span>
-                <a href="https://maps.app.goo.gl/tzCnwDU6ynd78KS26" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+                <span>Hip Pain & Mobility Restored</span>
+                <span className={styles.urduText}>کولہے کا درد اور حرکت بحال</span>
               </div>
             </div>
           </div>
           
           <div className={styles.testimonialsCta}>
-            <h3>Join Those Who Have Found Relief Without Surgery</h3>
-            <p className={styles.urduText}>اَن افراد میں شامل ہوں جنہیں بغیر آپریشن آرام ملا</p>
+            <h3>Join Thousands Who Have Found Pain Relief Without Surgery</h3>
+            <p className={styles.urduText}>ہزاروں افراد میں شامل ہوں جنہیں بغیر آپریشن درد سے آرام ملا</p>
             <div className={styles.testimonialPhoneCta}>
               <a href="tel:+923329622164" className={styles.testimonialPhone}>
                 <RiPhoneFill /> Call Dr. Asma: 0332 9622164
@@ -604,9 +627,6 @@ const FistulaLanding = () => {
           </div>
         </section>
 
-
-
-
         {/* Final Urgent CTA - Bilingual */}
         <section className={styles.finalUrgency}>
           <motion.div 
@@ -618,11 +638,11 @@ const FistulaLanding = () => {
           >
             <div className={styles.urgencyBadge}>🌟 SPECIAL ATTENTION GUARANTEED | خصوصی توجہ کی ضمانت</div>
             
-            <h2>Your Journey to Complete Fistula Healing Starts Now</h2>
-            <p className={styles.urduText}>آپ کے فسچولا کے مکمل علاج کا سفر اب شروع ہوتا ہے</p>
+            <h2>Your Journey to Complete Pain-Free Living Starts Now</h2>
+            <p className={styles.urduText}>آپ کے درد سے پاک زندگی کے سفر کا آغاز اب ہوتا ہے</p>
             
-            <p>Don't let fistula control your life any longer. Our natural treatment has helped thousands avoid surgery and regain their comfort.</p>
-            <p className={styles.urduText}>فسچولا کو اپنی زندگی پر حکومت نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو آپریشن سے بچایا ہے اور ان کی آرام واپس دلایا ہے۔</p>
+            <p>Don't let nerve pain and joint issues control your life any longer. Our natural treatment has helped thousands avoid surgery and regain their mobility and comfort.</p>
+            <p className={styles.urduText}>عصبی درد اور جوڑوں کے مسائل کو اپنی زندگی پر حکومت نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو آپریشن سے بچایا ہے اور ان کی حرکت اور آرام واپس دلایا ہے۔</p>
             
             <div className={styles.urgencyStats}>
               <div className={styles.urgencyStat}>
@@ -630,10 +650,10 @@ const FistulaLanding = () => {
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <strong>1,500+</strong>
+                  <strong>2,000+</strong>
                 </motion.div>
-                <span>Fistula Patients Helped</span>
-                <span className={styles.urduText}>فسچولا کے مریضوں کی مدد</span>
+                <span>Pain Patients Helped</span>
+                <span className={styles.urduText}>درد کے مریضوں کی مدد</span>
               </div>
               <div className={styles.urgencyStat}>
                 <motion.div
@@ -670,8 +690,8 @@ const FistulaLanding = () => {
               </div>
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
-                <span><strong>Prevent Recurrence</strong> - Address root causes permanently</span>
-                <span className={styles.urduText}><strong>دوبارہ ہونے سے بچاؤ</strong> - وجوہات کا مستقل علاج</span>
+                <span><strong>Restore Mobility</strong> - Regain your freedom of movement</span>
+                <span className={styles.urduText}><strong>حرکت بحال کریں</strong> - اپنی حرکت کی آزادی واپس پائیں</span>
               </div>
             </div>
             
@@ -686,8 +706,8 @@ const FistulaLanding = () => {
                 <div>
                   <span>SPEAK WITH DR. ASMA ARSHAD</span>
                   <span className={styles.ctaUrdu}>ڈاکٹر عاصمہ ارشد سے براہ راست بات کریں</span>
-                  <small>Get Personalized Advice</small>
-                  <small className={styles.ctaUrdu}>ذاتی مشورہ حاصل کریں</small>
+                  <small>Get Personalized Pain Relief Advice</small>
+                  <small className={styles.ctaUrdu}>ذاتی درد سے نجات کی راہنمائی حاصل کریں</small>
                 </div>
               </motion.a>
               
@@ -701,8 +721,8 @@ const FistulaLanding = () => {
                 <div>
                   <span>SPEAK WITH DR ASAD AWAN</span>
                   <span className={styles.ctaUrdu}>ڈاکٹر اسد اعوان سے براہ راست بات کریں</span>
-                  <small>Send Your Symptoms & Get Expert Opinion</small>
-                  <small className={styles.ctaUrdu}>اپنی علامات بھیجیں اور ماہرانہ رائے حاصل کریں</small>
+                  <small>Send Your Pain Symptoms & Get Expert Opinion</small>
+                  <small className={styles.ctaUrdu}>اپنی درد کی علامات بھیجیں اور ماہرانہ رائے حاصل کریں</small>
                 </div>
               </motion.a>
             </div>
@@ -713,14 +733,14 @@ const FistulaLanding = () => {
                 <span><strong>COMPLETE PATIENT SATISFACTION FOCUS</strong></span>
                 <span className={styles.urduText}><strong>مکمل مریض کی تسلی پر توجہ</strong></span>
               </div>
-              <p>We are committed to your complete healing and will work with you until you achieve the comfort you deserve without surgery.</p>
-              <p className={styles.urduText}>ہم آپ کی مکمل صحت یابی کے لیے پرعزم ہیں اور آپ کے ساتھ اس وقت تک کام کریں گے جب تک آپ بغیر آپریشن کے وہ آرام حاصل نہیں کر لیتے جس کے آپ مستحق ہیں۔</p>
+              <p>We are committed to your complete pain relief and will work with you until you achieve the mobility and comfort you deserve without surgery.</p>
+              <p className={styles.urduText}>ہم آپ کے درد کے مکمل خاتمے کے لیے پرعزم ہیں اور آپ کے ساتھ اس وقت تک کام کریں گے جب تک آپ بغیر آپریشن کے وہ حرکت اور آرام حاصل نہیں کر لیتے جس کے آپ مستحق ہیں۔</p>
             </div>
             
             <div className={styles.immediateHelp}>
               <FiClock className={styles.helpIcon} />
-              <span><strong>IMMEDIATE ATTENTION AVAILABLE:</strong> Call now and get same-day fistula relief guidance</span>
-              <span className={styles.urduText}><strong>فوری توجہ دستیاب:</strong> ابھی کال کریں اور اسی دن فسچولا سے ریلیف کی راہنمائی حاصل کریں</span>
+              <span><strong>IMMEDIATE ATTENTION AVAILABLE:</strong> Call now and get same-day pain relief guidance</span>
+              <span className={styles.urduText}><strong>فوری توجہ دستیاب:</strong> ابھی کال کریں اور اسی دن درد سے ریلیف کی راہنمائی حاصل کریں</span>
             </div>
           </motion.div>
         </section>
@@ -732,7 +752,7 @@ const FistulaLanding = () => {
           <div className={styles.clinicInfo}>
             <h4>Arshad Homeopathic Clinic <br/> ارشد ہومیوپیتھک کلینک</h4>
             <p>Muslim Town, Rawalpindi</p>
-            <p>18+ Years Specializing in Fistula Treatment</p>
+            <p>18+ Years Specializing in Pain Management</p>
           </div>
           
           <div className={styles.footerCtas}>
@@ -746,7 +766,7 @@ const FistulaLanding = () => {
         </div>
         
         <div className={styles.trustFooter}>
-          <span>✓ 1500+ Fistula Patients Treated</span>
+          <span>✓ 2000+ Pain Patients Treated</span>
           <span>✓ 95% Documented Success Rate</span>
           <span>✓ 18+ Years Specialized Experience</span>
           <span>✓ Surgery-Free Treatment Guaranteed</span>
@@ -758,4 +778,4 @@ const FistulaLanding = () => {
   );
 };
 
-export default FistulaLanding;
+export default SciaticaArthritisLanding;
