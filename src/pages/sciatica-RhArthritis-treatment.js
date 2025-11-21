@@ -87,12 +87,12 @@ const SciaticaArthritisLanding = () => {
       const newPlayer = new window.YT.Player(videoContainerRef.current, {
         height: '100%',
         width: '100%',
-        videoId: 'GImzXsoLB-g',
+        videoId: 'bFOWZa0Lg1s',
         playerVars: {
           'autoplay': 1,
           'mute': 1,
           'loop': 1,
-          'playlist': 'GImzXsoLB-g',
+          'playlist': 'bFOWZa0Lg1s',
           'controls': 0,
           'modestbranding': 1,
           'rel': 0,
@@ -214,17 +214,28 @@ const SciaticaArthritisLanding = () => {
                 ease: "easeInOut"
               }}
             >
-              🔥 URGENT: Limited Free Consultations Today!
+              🔥 Free Consultations Today!
             </motion.span>
             
             <div className={styles.stickyCtas}>
               <a href="https://wa.me/923329622164" className={styles.whatsappCta}>
-                <RiWhatsappFill /> Dr Asma: 0332 9622164
+                <RiWhatsappFill /> Dr Asma
               </a>
               <a href="https://wa.me/923125122488" className={styles.whatsappCta}>
-                <RiWhatsappFill /> Dr Asad: 0312 5122488
+                <RiWhatsappFill /> Dr Asad
               </a>
             </div>
+            <motion.span
+              className={styles.stickyText}
+              animate={{ opacity: [1, 0.3, 1] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              Visit Our Website!
+            </motion.span>
           </div>
         </div>
       </header>
@@ -246,7 +257,7 @@ const SciaticaArthritisLanding = () => {
               className={styles.heroText}
             >
               <div className={styles.badge}>
-                ⚡ 95% SUCCESS RATE • 2000+ PATIENTS TREATED | پچانوے فیصد کامیابی
+                ⚡ 95% SUCCESS RATE • 1000+ PATIENTS TREATED | پچانوے فیصد کامیابی
               </div>
               
               <h1>
@@ -358,10 +369,10 @@ const SciaticaArthritisLanding = () => {
             </div><br/>
             <div className={styles.symptomPhoneCta}>
               <a href="tel:+923329622164" className={styles.symptomPhone}>
-                <RiPhoneFill /> Dr Mrs Asma Arshad: 0332 9622164
+                <RiPhoneFill /> Dr. Asma: 0332 9622164
               </a>
               <a href="tel:+923125122488" className={styles.symptomPhone1}>
-                <RiPhoneFill /> Dr Asad Awan: 0312 5122488
+                <RiPhoneFill /> Dr. Asad: 0312 5122488
               </a>
             </div>
             
@@ -497,132 +508,56 @@ const SciaticaArthritisLanding = () => {
           </motion.div>
           
           <div className={styles.testimonialGrid}>
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/5KrYMq2E8DMKrTnB8" target="_blank" rel="noopener noreferrer">
-                  "I suffered from severe sciatica pain for 3 years that radiated from my lower back to my right leg. I couldn't sit for more than 15 minutes. After starting treatment with Dr. Asad, within 2 weeks the shooting pain reduced significantly. After 2 months, I can now sit through entire meetings and even drive long distances. The natural approach without painkillers has been life-changing."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Ahmed Raza ~ Islamabad</strong>
-                <span>★★★★★</span>
-                <span>3-Year Sciatica Pain Resolved</span>
-                <span className={styles.urduText}>3 سالہ شیاٹیکا درد حل ہوا</span>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://g.co/kgs/EywqFRm" target="_blank" rel="noopener noreferrer">
-                  "My knee arthritis was so bad I needed help to stand up from chairs. The stiffness in the morning would last for hours. Dr. Asma's treatment started showing results in just 3 weeks. The swelling reduced and I could move more freely. Now after 4 months, I can climb stairs and even play with my grandchildren. I'm grateful I found this natural solution."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Saleem Khan ~ Lahore</strong>
-                <span>★★★★★</span>
-                <span>Severe Arthritis Improved</span>
-                <span className={styles.urduText}>شدید گنٹھیا میں بہتری</span>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/2QHMUF4oHVRjKddv7" target="_blank" rel="noopener noreferrer">
-                  "I had chronic back pain with numbness in my left foot for 5 years. Multiple doctors suggested surgery but I was afraid. Dr. Asad's homeopathic treatment not only relieved the pain but also restored sensation in my foot. The numbness is completely gone and I can walk normally again. This treatment saved me from surgery."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Fatima Noor ~ Rawalpindi</strong>
-                <span>★★★★★</span>
-                <span>Chronic Back Pain & Numbness Cured</span>
-                <span className={styles.urduText}>پرانا کمر درد اور سن ہونا حل ہوا</span>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://g.co/kgs/J1Wys8K" target="_blank" rel="noopener noreferrer">
-                  "After trying everything for my joint pain, I was skeptical about homeopathy. But Dr. Asma proved me wrong. Her personalized approach and gentle medicines have given me my mobility back. I can now enjoy my daily walks and household work without constant pain. The staff is very supportive and professional."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Nasreen Begum ~ Karachi</strong>
-                <span>★★★★★</span>
-                <span>Joint Pain & Mobility Restored</span>
-                <span className={styles.urduText}>جوڑوں کا درد اور حرکت بحال</span>
-              </div>
-            </div>
             
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/eRZ5CmtWjdKVD9neA" target="_blank" rel="noopener noreferrer">
-                  "The shooting pain in my leg was making my life miserable. I couldn't sleep properly for months. Within the first month of treatment with Dr. Asad, my sleep improved dramatically. The pain reduced by 80% and I could finally rest properly. After 3 months, I'm pain-free and living a normal life again."
-                </a>
-              </div>
+              <div className={styles.quote}>"ASLAMUALIAKUM I M SHAKIL AHMED FROM AZAD KASHMIR
+              DOSTOO MAIN LAST 2 YEAR SE KAMER KI TAKLEEF MAIN THA BOHAT DOCTORS SE MEDICINE LI BUT KAHIN SE B KOI KHAS FARQ NAI PARA PHIR  MERAY  AIK DOST NE MUJAY ARSHAD HOMEOPATHIC CLINIC KA BATAYA TO MAIN NE CALL PE UN SE APNA MASLA BIYAAN KIYA  JAHAN MERI BAAT DOCTOR ASAD SHAB SE HOI UNHOON NE MUJAY TASALI DI OR APNAY CLINIC PE BULAYA OR JAHAN DOCTOR ASAD SHAB NE MERA POORA CASE DISCUSS KIYA OR MUJAY MEDICINE DI JO MAIN NE BAQAUDGI SE USE KI AB ALHUMDOLILLHA MUJAY TWO MONTH HO GAYE HAIN MAIN BOHAT SAKOON MAIN HUN DOCTOR ASAD SHAB BOHAT NAFEES INSAAN HAIN MAIN TEH DIL SE DOCTOR ASAD SHAB KA MASHKOOR HUN THANK YOU DOCTOR ASAD SHAB"</div>
               <div className={styles.patientInfo}>
-                <strong>Bilal Ahmed ~ Peshawar</strong>
+                <strong>shakil ahmed ~ Azad Kashmir</strong>
                 <span>★★★★★</span>
-                <span>Sciatica Pain & Sleep Issues Resolved</span>
-                <span className={styles.urduText}>شیاٹیکا درد اور نیند کے مسائل حل</span>
-              </div>
-            </div>
-            
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://g.co/kgs/JNomDar" target="_blank" rel="noopener noreferrer">
-                  "My rheumatoid arthritis was affecting multiple joints and the pain was constant. The inflammation made simple tasks difficult. Dr. Asma's treatment not only reduced the pain but also decreased the swelling significantly. I can now use my hands properly and the morning stiffness is gone. Highly recommended for arthritis sufferers."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Zainab Ali ~ Multan</strong>
-                <span>★★★★★</span>
-                <span>Rheumatoid Arthritis Under Control</span>
-                <span className={styles.urduText}>ریمیٹائڈ گنٹھیا کنٹرول میں</span>
+                <span>Two years of back pain were cured.</span>
+                <span className={styles.urduText}>دو سال سے پرانا کمر درد ٹھیک ہو گیا</span>
+                <a href="https://maps.app.goo.gl/dKQV8unbKZTgaxx3A" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
 
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/wnW3WcBJDjYQhojy9" target="_blank" rel="noopener noreferrer">
-                  "I had been taking painkillers for my sciatica for years with no permanent relief. Dr. Asad's natural approach addressed the root cause. The treatment was gentle yet effective. My dependency on painkillers is gone and the nerve pain has completely disappeared. I feel like I have my life back."
-                </a>
-              </div>
+              <div className={styles.quote}>"Best Homeopathic clinic.Highly recommended Dr Asma is very cooperative and kind i was having health issues from almost 2,3 years took many medicines but nothing worked but their medicine is really effective.Highly Recommended."</div>
               <div className={styles.patientInfo}>
-                <strong>Kamran Hussain ~ Faisalabad</strong>
+                <strong>FAHAD SAAD ~ Rawalpindi</strong>
                 <span>★★★★★</span>
-                <span>Painkiller Dependency Ended</span>
-                <span className={styles.urduText}>درد کش ادویات پر انحصار ختم</span>
+                <span>Two years of multiple health issues were cured</span>
+                <span className={styles.urduText}>دو سال کے متعدد صحت کے مسائل ٹھیک ہو گئے۔</span>
+                <a href="https://maps.app.goo.gl/iFQr87v76ufGJP1j8" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
 
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/testimonial8" target="_blank" rel="noopener noreferrer">
-                  "The combination of sciatica and arthritis in my hips made every movement painful. I was considering surgery as my last option. Dr. Asma's comprehensive treatment plan worked wonders. The pain reduced gradually and my mobility improved. Now I can walk, sit, and stand without constant discomfort. Thank you for giving me my freedom back."
-                </a>
-              </div>
+              <div className={styles.quote}>"Dr asma is a very kind and professional.  She deals patients  very professionally  and kind heartedly."</div>
               <div className={styles.patientInfo}>
-                <strong>Rukhsana Bibi ~ Gujranwala</strong>
+                <strong>Ehsan Ul haq ~ Rawalpindi</strong>
                 <span>★★★★★</span>
-                <span>Hip Pain & Mobility Restored</span>
-                <span className={styles.urduText}>کولہے کا درد اور حرکت بحال</span>
+                <span>Arthritis</span>
+                <span className={styles.urduText}>گنٹھیا کا درد</span>
+                <a href="https://maps.app.goo.gl/SNHHpLNWjCxrUaiA7" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
+
           </div>
           
           <div className={styles.testimonialsCta}>
-            <h3>Join Thousands Who Have Found Pain Relief Without Surgery</h3>
-            <p className={styles.urduText}>ہزاروں افراد میں شامل ہوں جنہیں بغیر آپریشن درد سے آرام ملا</p>
+            <h3>Join Those Who Have Found Pain Relief Without Surgery</h3>
+            <p className={styles.urduText}>اُن افراد میں شامل ہوں جنہیں بغیر آپریشن درد سے آرام ملا</p>
             <div className={styles.testimonialPhoneCta}>
               <a href="tel:+923329622164" className={styles.testimonialPhone}>
-                <RiPhoneFill /> Call Dr. Asma: 0332 9622164
+                <RiPhoneFill /> Dr. Asma: 0332 9622164
               </a>
-              <a href="tel:+923125122488" className={styles.testimonialPhone}>
-                <RiPhoneFill /> Call Dr. Asad: 0312 5122488
+              <a href="tel:+923125122488" className={styles.testimonialPhone1}>
+                <RiPhoneFill /> Dr. Asad: 0312 5122488
               </a>
             </div>
             <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">
-              View More Success Stories → | مزید کامیابی کی کہانیاں دیکھیں
+              Read More Success Stories → | مزید کامیابی کی آپ بیتیاں پڑھیں۔
             </a>
           </div>
         </section>
@@ -650,7 +585,7 @@ const SciaticaArthritisLanding = () => {
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <strong>2,000+</strong>
+                  <strong>1,000+</strong>
                 </motion.div>
                 <span>Pain Patients Helped</span>
                 <span className={styles.urduText}>درد کے مریضوں کی مدد</span>
@@ -686,12 +621,12 @@ const SciaticaArthritisLanding = () => {
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
                 <span><strong>Zero Side Effects</strong> - Completely natural and safe</span>
-                <span className={styles.urduText}><strong>سائیڈ ایفیکٹس سے پاک</strong> - مکمل قدرتی اور محفوظ</span>
+                <span className={styles.urduText}><strong>سائیڈ ایفیکٹس سے پاک</strong> - مکمل طور پر قدرتی اور محفوظ</span>
               </div>
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
                 <span><strong>Restore Mobility</strong> - Regain your freedom of movement</span>
-                <span className={styles.urduText}><strong>حرکت بحال کریں</strong> - اپنی حرکت کی آزادی واپس پائیں</span>
+                <span className={styles.urduText}><strong>حرکت بحال کریں</strong> - اپنی چلنے پھرنے کی آزادی واپس پائیں</span>
               </div>
             </div>
             
@@ -767,7 +702,7 @@ const SciaticaArthritisLanding = () => {
         
         <div className={styles.trustFooter}>
           <span>✓ 2000+ Pain Patients Treated</span>
-          <span>✓ 95% Documented Success Rate</span>
+          <span>✓ 95% Success Rate</span>
           <span>✓ 18+ Years Specialized Experience</span>
           <span>✓ Surgery-Free Treatment Guaranteed</span>
         </div>

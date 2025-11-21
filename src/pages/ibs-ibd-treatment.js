@@ -214,17 +214,28 @@ const IBSLanding = () => {
                 ease: "easeInOut"
               }}
             >
-              🔥 URGENT: Limited Free Consultations Today!
+              🔥 Free Consultations Today!
             </motion.span>
             
             <div className={styles.stickyCtas}>
               <a href="https://wa.me/923329622164" className={styles.whatsappCta}>
-                <RiWhatsappFill /> Dr Asma: 0332 9622164
+                <RiWhatsappFill /> Dr Asma
               </a>
               <a href="https://wa.me/923125122488" className={styles.whatsappCta}>
-                <RiWhatsappFill /> Dr Asad: 0312 5122488
+                <RiWhatsappFill /> Dr Asad
               </a>
             </div>
+            <motion.span
+              className={styles.stickyText}
+              animate={{ opacity: [1, 0.3, 1] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              Visit Our Website!
+            </motion.span>
           </div>
         </div>
       </header>
@@ -358,10 +369,10 @@ const IBSLanding = () => {
             </div><br/>
             <div className={styles.symptomPhoneCta}>
               <a href="tel:+923329622164" className={styles.symptomPhone}>
-                <RiPhoneFill /> Dr Mrs Asma Arshad: 0332 9622164
+                <RiPhoneFill /> Dr. Asma: 0332 9622164
               </a>
               <a href="tel:+923125122488" className={styles.symptomPhone1}>
-                <RiPhoneFill /> Dr Asad Awan: 0312 5122488
+                <RiPhoneFill /> Dr. Asad: 0312 5122488
               </a>
             </div>
             
@@ -611,18 +622,18 @@ const IBSLanding = () => {
           </div>
           
           <div className={styles.testimonialsCta}>
-            <h3>Join Thousands Who Have Found Digestive Relief</h3>
-            <p className={styles.urduText}>ہزاروں افراد میں شامل ہوں جنہیں ہاضمے کے مسائل سے آرام ملا</p>
+            <h3>Join Those Who Have Found Digestive Relief</h3>
+            <p className={styles.urduText}>اُن افراد میں شامل ہوں جنہیں ہاضمے کے مسائل سے آرام ملا</p>
             <div className={styles.testimonialPhoneCta}>
               <a href="tel:+923329622164" className={styles.testimonialPhone}>
-                <RiPhoneFill /> Call Dr. Asma: 0332 9622164
+                <RiPhoneFill /> Dr. Asma: 0332 9622164
               </a>
-              <a href="tel:+923125122488" className={styles.testimonialPhone}>
-                <RiPhoneFill /> Call Dr. Asad: 0312 5122488
+              <a href="tel:+923125122488" className={styles.testimonialPhone1}>
+                <RiPhoneFill /> Dr. Asad: 0312 5122488
               </a>
             </div>
             <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">
-              View More Success Stories → | مزید کامیابی کی کہانیاں دیکھیں
+              Read More Success Stories → | مزید کامیابی کی آپ بیتیاں پڑھیں۔
             </a>
           </div>
         </section>
@@ -640,10 +651,10 @@ const IBSLanding = () => {
             <div className={styles.urgencyBadge}>🌟 SPECIAL ATTENTION GUARANTEED | خصوصی توجہ کی ضمانت</div>
             
             <h2>Your Journey to Complete Digestive Wellness Starts Now</h2>
-            <p className={styles.urduText}>آپ کے مکمل digestive صحت کا سفر اب شروع ہوتا ہے</p>
+            <p className={styles.urduText}>آپ کے مکمل ہاضمہ کے نظام کی صحت کا سفر اب شروع ہوتا ہے</p>
             
             <p>Don't let digestive issues control your life any longer. Our natural treatment has helped thousands regain their comfort and confidence.</p>
-            <p className={styles.urduText}>پیٹ کے مسائل کو اپنی زندگی پر حکومت نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو ان کی آرام اور اعتماد واپس دلایا ہے۔</p>
+            <p className={styles.urduText}>پیٹ اور ہاضمہ کے مسائل کو اپنی زندگی کنٹرول نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو ان کا سکون اور اعتماد واپس دلایا ہے۔</p>
             
             <div className={styles.urgencyStats}>
               <div className={styles.urgencyStat}>
@@ -682,17 +693,17 @@ const IBSLanding = () => {
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
                 <span><strong>Personalized Treatment Plans</strong> - Tailored specifically for your condition</span>
-                <span className={styles.urduText}><strong>ذاتی علاج کے منصوبے</strong> - آپ کی حالت کے مطابق</span>
+                <span className={styles.urduText}><strong>ذاتی علاج کے منصوبے</strong> - آپ کی حالت کے مطابق دوا کا انتخاب کیا جاتا ہے</span>
               </div>
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
                 <span><strong>Zero Side Effects</strong> - Completely natural and safe</span>
-                <span className={styles.urduText}><strong>سائیڈ ایفیکٹس سے پاک</strong> - مکمل قدرتی اور محفوظ</span>
+                <span className={styles.urduText}><strong>سائیڈ ایفیکٹس سے پاک</strong> - مکمل طور پر قدرتی اور محفوظ</span>
               </div>
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
                 <span><strong>Lifetime Dietary Guidance</strong> - Learn to manage your condition naturally</span>
-                <span className={styles.urduText}><strong>زندگی بھر کی غذائی رہنمائی</strong> - اپنی حالت کو قدرتی طور پر manage کریں</span>
+                <span className={styles.urduText}><strong>زندگی بھر کی غذائی راہنمائی</strong> - اپنی حالت کو قدرتی طور پر قابو کریں</span>
               </div>
             </div>
             
@@ -768,7 +779,7 @@ const IBSLanding = () => {
         
         <div className={styles.trustFooter}>
           <span>✓ 1000+ IBS/IBD Patients Treated</span>
-          <span>✓ 95% Documented Success Rate</span>
+          <span>✓ 95% Success Rate</span>
           <span>✓ 18+ Years Specialized Experience</span>
           <span>✓ Zero Side Effects Guaranteed</span>
         </div>
