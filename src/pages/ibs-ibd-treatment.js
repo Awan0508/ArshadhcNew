@@ -225,7 +225,9 @@ const IBSLanding = () => {
                 <RiWhatsappFill /> Dr Asad
               </a>
             </div>
-            <motion.span
+           
+              <a href="/Testimonials" target="_blank" rel="noopener noreferrer" >
+               <motion.span
               className={styles.stickyText}
               animate={{ opacity: [1, 0.3, 1] }}
               transition={{
@@ -234,8 +236,11 @@ const IBSLanding = () => {
                 ease: "easeInOut"
               }}
             >
-              Visit Our Website!
+            Visit Our Website!
             </motion.span>
+          </a>
+              
+            
           </div>
         </div>
       </header>

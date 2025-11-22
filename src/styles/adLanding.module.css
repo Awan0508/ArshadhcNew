@@ -18,7 +18,7 @@
   font-family: 'Noto Nastaliq Urdu', 'Segoe UI', Tahoma, sans-serif;
   direction: rtl;
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 2;
   margin: 5px 0;
   text-align: center;
 }
@@ -35,7 +35,7 @@
   border-radius: 1rem;
   display: block;
   margin: 10px 0;
-  line-height: 1.4;
+  line-height: 2;
   text-align: center;
 }
 
@@ -51,7 +51,7 @@
   border-radius: 1rem;
   display: block;
   margin: 10px 0;
-  line-height: 1.4;
+  line-height: 2;
   text-align: right;
 }
 
@@ -172,6 +172,11 @@
   font-weight: 700;
   font-size: 0.9rem;
   white-space: nowrap;
+}
+
+.emergencyAlert a {
+text-decoration: none;
+color: white;
 }
 
 .stickyCtas {
@@ -891,8 +896,7 @@ background: #28a745;
 /* Final Urgency Section */
 .finalUrgency {
   padding: 80px 0;
-  /* background: linear-gradient(135deg, #ff6b6b, #ff4444); */
-  background: linear-gradient(135deg, #725e5e, #7e4141);
+  background: linear-gradient(135deg, #36923d, #25992f);
   color: white;
   text-align: center;
 }
@@ -904,15 +908,19 @@ background: #28a745;
 }
 
 .urgencyBadge {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Noto Nastaliq Urdu',  sans-serif;
+  background: linear-gradient(135deg, #fafcfa, #ffffff);
+  color: #25992f;
   padding: 12px 24px;
   border-radius: 25px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
   display: inline-block;
   margin-bottom: 30px;
   backdrop-filter: blur(10px);
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  line-height: 2;
+  border: solid 2px white;
 }
 
 .urgencyContent h2 {
@@ -1203,9 +1211,11 @@ background: #28a745;
     text-align: center;
   }
   
-  .stickyText {
+  /* .stickyText {
     color: yellow;
-  }
+    text-decoration: none;
+    
+  } */
 
   .urgencyStats {
     gap: 30px;

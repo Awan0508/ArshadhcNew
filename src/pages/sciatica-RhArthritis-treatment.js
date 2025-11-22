@@ -214,7 +214,9 @@ const SciaticaArthritisLanding = () => {
                 ease: "easeInOut"
               }}
             >
-              🔥 Free Consultations Today!
+              <a href="/Testimonials" target="_blank" rel="noopener noreferrer">
+            For More Information Visit Our Website
+          </a>
             </motion.span>
             
             <div className={styles.stickyCtas}>
@@ -225,17 +227,6 @@ const SciaticaArthritisLanding = () => {
                 <RiWhatsappFill /> Dr Asad
               </a>
             </div>
-            <motion.span
-              className={styles.stickyText}
-              animate={{ opacity: [1, 0.3, 1] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              Visit Our Website!
-            </motion.span>
           </div>
         </div>
       </header>
