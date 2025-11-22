@@ -463,61 +463,53 @@ const IBDLanding = () => {
           </motion.div>
           
           <div className={styles.testimonialGrid}>
+            
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/5KrYMq2E8DMKrTnB8" target="_blank" rel="noopener noreferrer">
-                  "I was diagnosed with Ulcerative Colitis 3 years ago. The bleeding and pain were unbearable. After trying allopathic treatments with little success, I found Dr. Asad. His homeopathic treatment not only stopped the bleeding within 2 weeks but also reduced the inflammation significantly. Now I can live a normal life without constant fear."
-                </a>
-              </div>
+              <div className={styles.quote}>"Best Homeopathic clinic.Highly recommended Dr Asma is very cooperative and kind i was having health issues from almost 2,3 years took many medicines but nothing worked but their medicine is really effective.Highly Recommended."</div>
               <div className={styles.patientInfo}>
-                <strong>Ahmed Raza ~ Ulcerative Colitis</strong>
+                <strong>FAHAD SAAD</strong>
                 <span>★★★★★</span>
-                <span>Bleeding Stopped in 2 Weeks</span>
-                <span className={styles.urduText}>خون آنا 2 ہفتے میں بند ہوا</span>
+                <span>2 Years long health issues cured</span>
+                <span className={styles.urduText}>دو سال پرانی صحت سے متعلق پیچیدگیوں کا کامیاب علاج</span>
+                <a href="https://maps.app.goo.gl/f6aHELVJmLPrcBUM9" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+              </div>
+            </div>
+           
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>"Assalam alaikum I am Abrish.I was suffering from skin infection for last 2 years. I was very worried about this. I got myself checked by many good doctors. But I was not getting well. Then someone told me about (Arshad Homeopathic Clinic). Then I made an appointment with Dr. Asma. I discussed my issue with her. She gave me medicines. Alhamdulillah now it has been 1 and half month since I started using the medicines and I am feeling much better ⭐👍 fully recommended 💯 (From Rawalpindi)😇😊"</div>
+              <div className={styles.patientInfo}>
+                <strong>Ahmed Shakil ~ Rawalpindi</strong>
+                <span>★★★★★</span>
+                <span>Cured from 2 years long skin infections.</span>
+                <span className={styles.urduText}>دو سال پرانی جلدی انفیکشن کا کامیاب علاج</span>
+                <a href="https://maps.app.goo.gl/Ehd12NVZ3ZQUyfYW6" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+              </div>
+            </div>
+
+
+
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>"Best homeopathic dr. I always visit their clinic when have any health issue and never return disappointed"</div>
+              <div className={styles.patientInfo}>
+                <strong>Samana Zaynab ~ Islamabad</strong>
+                <span>★★★★★</span>
+                <span>Cured from multiple health issues.</span>
+                <span className={styles.urduText}>صحت سے متعلق متعدد مسائل کا کامیاب علاج</span>
+                <a href="https://maps.app.goo.gl/5DaodyFG8BAqyLmk9" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
 
             <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://g.co/kgs/EywqFRm" target="_blank" rel="noopener noreferrer">
-                  "My Crohn's disease was making my life miserable. Constant diarrhea, weight loss, and joint pain made every day a struggle. Dr. Asma's personalized treatment approach has given me my life back. The inflammation markers in my tests have improved dramatically, and I've gained back the weight I lost."
-                </a>
-              </div>
+              <div className={styles.quote}>"Best experience original product cooperative staff team and Dr are professional highly trained team 5 star rating"</div>
               <div className={styles.patientInfo}>
-                <strong>Fatima Noor ~ Crohn's Disease</strong>
+                <strong>Zaheer Ahmed</strong>
                 <span>★★★★★</span>
-                <span>Crohn's Symptoms Under Control</span>
-                <span className={styles.urduText}>کروہنز کی علامات قابو میں</span>
+                <span>Cured from IBD</span>
+                <span className={styles.urduText}>آنتوں کی سوزش کا کامیاب علاج</span>
+                <a href="https://maps.app.goo.gl/EL6bk8bGFV7KCW5y5" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://maps.app.goo.gl/2QHMUF4oHVRjKddv7" target="_blank" rel="noopener noreferrer">
-                  "After years of suffering with IBD and trying multiple treatments, I was skeptical about homeopathy. But Dr. Asad's thorough understanding of IBD and his customized treatment plan has been life-changing. The bleeding has stopped, and I no longer have that constant urgency. Thank you for giving me my life back."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Bilal Ahmed ~ IBD Patient</strong>
-                <span>★★★★★</span>
-                <span>3-Year IBD Battle Won</span>
-                <span className={styles.urduText}>3 سالہ IBD جنگ جیتی</span>
-              </div>
-            </div>
-
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>
-                <a href="https://g.co/kgs/J1Wys8K" target="_blank" rel="noopener noreferrer">
-                  "The combination of severe abdominal pain and blood in stool had me terrified. Traditional medicines were causing more side effects than benefits. Dr. Asma's natural approach not only relieved my symptoms but also improved my overall health. I'm forever grateful for this life-changing treatment."
-                </a>
-              </div>
-              <div className={styles.patientInfo}>
-                <strong>Sara Khan ~ Severe IBD</strong>
-                <span>★★★★★</span>
-                <span>Complete IBD Relief</span>
-                <span className={styles.urduText}>مکمل آنتوں کی سوزش سے بہتری</span>
-              </div>
-            </div>
+          
           </div>
           
           <div className={styles.testimonialsCta}>

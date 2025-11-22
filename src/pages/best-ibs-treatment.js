@@ -500,16 +500,29 @@ const IBSLanding = () => {
             </div>
             
             
-             <div className={styles.testimonialCard}>
+            <div className={styles.testimonialCard}>
               <div className={styles.quote}>"A very super duper clinic for all kind of patients and a brilliant doctor available as well. I'm satisfied with the way of your treatment and I think the people of Rawalpindi are very lucky to have a doctor like you. I pray for you, Allah give you success in future."</div>
               <div className={styles.patientInfo}>
                 <strong>Bashir Khan ~ Peshawar</strong>
                 <span>★★★★★</span>
                 <span>Complete IBS Relief</span>
-                <span className={styles.urduText}>مکمل IBS سے بہتری</span>
+                <span className={styles.urduText}> IBS سے مکمل بہتری</span>
                 <a href="https://g.co/kgs/J1Wys8K" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
+
+            <div className={styles.testimonialCard}>
+              <div className={styles.quote}>"I had constipation when I get the medicine from her I feel relax. She is very kind and good speak lady"</div>
+              <div className={styles.patientInfo}>
+                <strong>Naveed Rehman ~ IBS Constipation</strong>
+                <span>★★★★★</span>
+                <span>Complete IBS Constipation Relief</span>
+                <span className={styles.urduText}> IBS قبض سے مکمل بہتری</span>
+                <a href="https://maps.app.goo.gl/npN895rfZRFeuJbU6" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
+              </div>
+            </div>
+
+
           </div>
           
           <div className={styles.testimonialsCta}>
