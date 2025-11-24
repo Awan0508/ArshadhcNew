@@ -537,7 +537,7 @@ const IBSLanding = () => {
               </a>
             </div>
             <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">
-              Read More IBS Success Stories → | آنتوں کی غیر معمولی حساسیت کے مرض کی کامیابی کی مزید آپ بیتیاں پڑھیں۔
+              Read More Success Stories → | کامیابی کی مزید آپ بیتیاں پڑھیں۔
             </a>
           </div>
         </section>

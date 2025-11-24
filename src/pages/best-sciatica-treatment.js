@@ -7,38 +7,38 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Sciatica & Arthritis Treatment Without Surgery | 95% Success Rate | Rawalpindi | شیاٹیکا اور گنٹھیا کا علاج",
-    description: "Finally! Get permanent relief from sciatica pain and arthritis WITHOUT surgery or side effects. 18+ years expertise. 2000+ patients treated successfully. Book FREE consultation. | شیاٹیکا اور گنٹھیا کا مکمل علاج بغیر آپریشن کے۔ 95% کامیابی۔ مفت کنسلٹیشن",
-    keywords: "sciatica treatment, arthritis treatment, joint pain, back pain, nerve pain, homeopathic doctor, pain relief, شیاٹیکا کا علاج, گنٹھیا کا علاج, جوڑوں کا درد",
+    title: "Sciatica Treatment Without Surgery | 95% Success Rate | Rawalpindi | شیاٹیکا کا علاج",
+    description: "Finally! Get permanent relief from sciatica pain WITHOUT surgery or side effects. 18+ years expertise. 2000+ patients treated successfully. Book FREE consultation. | شیاٹیکا کا مکمل علاج بغیر آپریشن کے۔ 95% کامیابی۔ مفت کنسلٹیشن",
+    keywords: "sciatica treatment, sciatic nerve pain, back pain, leg pain, nerve pain, homeopathic doctor, pain relief, شیاٹیکا کا علاج, کمر درد, ٹانگوں کا درد",
     robots: { index: false, follow: false },
     openGraph: {
-      title: "Sciatica & Arthritis Pain Relief - 95% Success Without Surgery | شیاٹیکا اور گنٹھیا کا علاج",
-      description: "Stop suffering! Natural treatment that actually works for sciatica nerve pain and arthritis. Proven results. Book consultation now! | کمر درد، ٹانگوں کا درد اور جوڑوں کے درد کا مستقل علاج",
+      title: "Sciatica Pain Relief - 95% Success Without Surgery | شیاٹیکا کا علاج",
+      description: "Stop suffering! Natural treatment that actually works for sciatica nerve pain. Proven results. Book consultation now! | کمر درد اور ٹانگوں کے درد کا مستقل علاج",
       type: "website",
-      url: "https://www.arshadhc.com",
+      url: "https://www.arshadhc.com/sciatica",
       images: [
         {
-          url: "https://www.arshadhc.com/images/sciatica-arthritis-landing.jpg",
+          url: "https://www.arshadhc.com/images/sciatica-landing.jpg",
           width: 1200,
           height: 630,
-          alt: "Natural Sciatica & Arthritis Treatment at Arshad Homeopathic Clinic",
+          alt: "Natural Sciatica Treatment at Arshad Homeopathic Clinic",
         },
       ],
       siteName: "Arshad Homeopathic Clinic",
     },
     twitter: {
       card: "summary_large_image",
-      title: "Sciatica & Arthritis Treatment - 95% Success Rate | شیاٹیکا اور گنٹھیا کا علاج",
-      description: "Finally! Permanent relief from nerve pain and joint inflammation without surgery. 18+ years expertise. | قدرتی ہومیوپیتھک علاج",
-      image: "https://www.arshadhc.com/images/sciatica-arthritis-landing.jpg",
+      title: "Sciatica Treatment - 95% Success Rate | شیاٹیکا کا علاج",
+      description: "Finally! Permanent relief from sciatic nerve pain without surgery. 18+ years expertise. | قدرتی ہومیوپیتھک علاج",
+      image: "https://www.arshadhc.com/images/sciatica-landing.jpg",
     },
     alternates: {
-      canonical: "https://www.arshadhc.com",
+      canonical: "https://www.arshadhc.com/sciatica",
     },
   };
 }
 
-const SciaticaArthritisLanding = () => {
+const SciaticaLanding = () => {
   const [active, setActive] = useState(false);
   const [player, setPlayer] = useState(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -127,38 +127,34 @@ const SciaticaArthritisLanding = () => {
   const conditionSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalCondition",
-    name: "Sciatica and Arthritis",
-    alternateName: ["Sciatic Nerve Pain", "Osteoarthritis", "Rheumatoid Arthritis", "Joint Pain"],
-    description: "Chronic pain conditions affecting nerves, joints and muscles including sciatic nerve compression and joint inflammation",
-    cause: "Nerve compression, inflammation, aging, injury, autoimmune factors",
+    name: "Sciatica",
+    alternateName: ["Sciatic Nerve Pain", "Nerve Compression", "Leg Pain"],
+    description: "Chronic pain condition affecting sciatic nerve causing pain in lower back and legs",
+    cause: "Nerve compression, inflammation, injury, spinal issues",
     possibleTreatment: {
       "@type": "MedicalTherapy",
-      name: "Homeopathic Sciatica and Arthritis Treatment",
-      description: "Natural, non-surgical treatment for sciatica and arthritis with a 95% success rate",
-      url: "https://www.arshadhc.com",
+      name: "Homeopathic Sciatica Treatment",
+      description: "Natural, non-surgical treatment for sciatica with a 95% success rate",
+      url: "https://www.arshadhc.com/sciatica",
     },
   };
 
   const sanitizeJson = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
 
-  // Comprehensive symptoms list for Sciatica & Arthritis
+  // Sciatica specific symptoms list
   const symptomsList = [
     { en: "Sharp Shooting Pain in Legs", ur: "ٹانگوں میں تیز چبھنے والا درد", icon: "⚡" },
     { en: "Lower Back Pain Radiating to Legs", ur: "کمر کا درد جو ٹانگوں تک پھیلے", icon: "🔙" },
     { en: "Numbness & Tingling in Feet", ur: "پاؤں میں سن ہونے اور جھنجھناہٹ", icon: "🦶" },
-    { en: "Joint Stiffness in Morning", ur: "صبح کے وقت جوڑوں میں اکڑاؤ", icon: "🌅" },
     { en: "Difficulty Walking or Standing", ur: "چلنے یا کھڑے ہونے میں دشواری", icon: "🚶" },
     { en: "Burning Sensation in Legs", ur: "ٹانگوں میں جلن کا احساس", icon: "🔥" },
-    { en: "Swollen & Painful Joints", ur: "سوجن اور دردناک جوڑ", icon: "🦵" },
     { en: "Muscle Weakness in Legs", ur: "ٹانگوں میں عضلاتی کمزوری", icon: "💪" },
     { en: "Pain Worse When Sitting", ur: "بیٹھنے سے درد بڑھ جائے", icon: "🪑" },
-    { en: "Limited Joint Movement", ur: "جوڑوں کی حرکت میں محدودیت", icon: "↔️" },
     { en: "Sleep Disturbance Due to Pain", ur: "درد کی وجہ سے نیند میں خلل", icon: "😴" },
     { en: "Difficulty Climbing Stairs", ur: "سیڑھیاں چڑھنے میں دشواری", icon: "📶" },
     { en: "Pain Shooting to Toes", ur: "درد انگلیوں تک محسوس ہو", icon: "👣" },
-    { en: "Joint Cracking Sounds", ur: "جوڑوں سے آوازیں آنا", icon: "🔊" },
     { en: "Unable to Bend or Lift", ur: "جھک نہ سکنا یا اٹھا نہ سکنا", icon: "📦" },
-    { en: "Constant Aching in Joints", ur: "جوڑوں میں مسلسل درد", icon: "😫" }
+    { en: "Constant Leg Pain", ur: "ٹانگوں میں مسلسل درد", icon: "😫" }
   ];
 
   return (
@@ -177,9 +173,9 @@ const SciaticaArthritisLanding = () => {
             >
               ×
             </button>
-            <h3>🚨 Emergency Pain Relief</h3>
-            <p>Are you in severe pain right now? Speak directly with our specialist doctors for immediate relief guidance.</p>
-            <p className={styles.urduText}>کیا آپ کو ابھی شدید درد ہے؟ فوری سکون کی راہنمائی کے لیے ہمارے ڈاکٹرز سے براہ راست بات کریں۔</p>
+            <h3>🚨 Sciatica Emergency Pain Relief</h3>
+            <p>Are you in severe sciatica pain right now? Speak directly with our specialist doctors for immediate relief guidance.</p>
+            <p className={styles.urduText}>کیا آپ کو ابھی شدید شیاٹیکا درد ہے؟ فوری سکون کی راہنمائی کے لیے ہمارے ڈاکٹرز سے براہ راست بات کریں۔</p>
             <div className={styles.popupButtons}>
               <a href="https://wa.me/923329622164" className={styles.popupWhatsapp}>
                 <RiWhatsappFill /> WhatsApp Dr. Asma   |    ڈاکٹر عاصمہ   
@@ -242,53 +238,22 @@ const SciaticaArthritisLanding = () => {
               className={styles.heroText}
             >
               <div className={styles.badge}>
-                ⚡ 95% SUCCESS RATE • 1000+ PATIENTS TREATED | پچانوے فیصد کامیابی
+                ⚡ 95% SUCCESS RATE • 1000+ SCIATICA PATIENTS TREATED | پچانوے فیصد کامیابی
               </div>
               
               <h1>
-                <span className={styles.mainHeadline}>Tired of <span className={styles.highlight}>Sciatica & Arthritis Pain</span> Controlling Your Life?</span>
-                <span className={styles.urduHeadline}>کیا <span className={styles.highlight}> شیاٹیکا اور گنٹھیا کا درد </span>آپ کی زندگی کنٹرول کر رہا ہے؟</span>
+                <span className={styles.mainHeadline}>Tired of <span className={styles.highlight}>Sciatica Pain</span> Controlling Your Life?</span>
+                <span className={styles.urduHeadline}>کیا <span className={styles.highlight}> شیاٹیکا کا درد </span>آپ کی زندگی کنٹرول کر رہا ہے؟</span>
                 <span className={styles.subHeadline}>Finally Discover The Natural Solution That Actually <span className={styles.highlight}>Works Without Surgery</span></span>
-                <span className={styles.urduSubHeadline}>شیاٹیکا اور گنٹھیا کا قدرتی علاج جو واقعی <span className={styles.highlight}>بغیر آپریشن کام کرتا ہے</span></span>
+                <span className={styles.urduSubHeadline}>شیاٹیکا کا قدرتی علاج جو واقعی <span className={styles.highlight}>بغیر آپریشن کام کرتا ہے</span></span>
               </h1>
               
               <p className={styles.heroSubtitle}>
-                <strong>Stop the endless cycle of nerve pain, joint stiffness, and mobility issues.</strong> Our 18+ years proven homeopathic treatment addresses the <strong>root cause</strong> of your pain—without surgery, without side effects, without dependency on painkillers.
+                <strong>Stop the endless cycle of nerve pain, leg numbness, and mobility issues.</strong> Our 18+ years proven homeopathic treatment addresses the <strong>root cause</strong> of your sciatica pain—without surgery, without side effects, without dependency on painkillers.
               </p>
               <p className={styles.urduText}>
-                <strong>عصبی درد، جوڑوں کی اکڑاؤ اور حرکت کی مشکلات کا خاتمہ کریں۔</strong> ہمارا 18+ سال کا ثابت شدہ ہومیوپیتھک علاج آپ کے درد کی <strong>جڑ</strong> پر کام کرتا ہے—بغیر آپریشن، بغیر سائیڈ ایفیکٹس، درد کش ادویات پر انحصار کے بغیر۔
+                <strong>عصبی درد، ٹانگوں کا سن ہونا اور حرکت کی مشکلات کا خاتمہ کریں۔</strong> ہمارا 18+ سال کا ثابت شدہ ہومیوپیتھک علاج آپ کے شیاٹیکا درد کی <strong>جڑ</strong> پر کام کرتا ہے—بغیر آپریشن، بغیر سائیڈ ایفیکٹس، درد کش ادویات پر انحصار کے بغیر۔
               </p>
-
-              {/* Primary CTA */}
-              <div className={styles.heroCtas}>
-                <motion.a 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/923329622164"
-                  className={styles.emergencyCta}
-                >
-                  <RiWhatsappFill />
-                  <div>
-                    <span className={styles.ctaMain}>Speak Directly With Dr. Asma</span>
-                    <span className={styles.ctaUrdu}>اعتماد کے ساتھ مشورہ کریں</span>
-                    <span className={styles.ctaSub}>Discuss With Confidence</span>
-                  </div>
-                </motion.a>
-                
-                <motion.a 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/923125122488"
-                  className={styles.whatsappCtaLarge}
-                >
-                  <RiWhatsappFill />
-                  <div>
-                    <span className={styles.ctaMain}>Speak Directly With Dr. Asad</span>
-                    <span className={styles.ctaUrdu}>واٹس ایپ پر مفت مشورہ کریں</span>
-                    <span className={styles.ctaSub}>FREE WhatsApp Consultation</span>
-                  </div>
-                </motion.a>
-              </div>
             </motion.div>
 
             {/* Video Section */}
@@ -305,9 +270,9 @@ const SciaticaArthritisLanding = () => {
                   </button>
                 </div>
                 <div className={styles.videoCaption}>
-                  <h3>WATCH: How We Cured Sciatica & Arthritis Patients</h3>
-                  <p className={styles.urduText}>دیکھیں: ہم نے شیاٹیکا اور گنٹھیا کے مریضوں کا علاج کیسے کیا</p>
-                  <p>"I can walk again without pain after 5 years of suffering" - Patient Review</p>
+                  <h3>WATCH: How We Cured Sciatica Patients</h3>
+                  <p className={styles.urduText}>دیکھیں: ہم نے شیاٹیکا کے مریضوں کا علاج کیسے کیا</p>
+                  <p>"I can walk again without pain after 5 years of suffering" - Sciatica Patient Review</p>
                 </div>
               </div>
             </motion.div>
@@ -323,10 +288,10 @@ const SciaticaArthritisLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Do You Have These <span className={styles.highlight}>Sciatica & Arthritis Symptoms</span>?</h2>
-            <p className={styles.urduText}>کیا آپ کو یہ <span className={styles.highlight}>شیاٹیکا اور گنٹھیا کی علامات</span> ہیں؟</p>
-            <p>If you're experiencing any of these symptoms, you're not alone. We can help!</p>
-            <p className={styles.urduText}>اگر آپ کو ان میں سے کوئی علامات ہیں تو آپ اکیلے نہیں ہیں۔ ہم مدد کر سکتے ہیں!</p>
+            <h2>Do You Have These <span className={styles.highlight}>Sciatica Symptoms</span>?</h2>
+            <p className={styles.urduText}>کیا آپ کو یہ <span className={styles.highlight}>شیاٹیکا کی علامات</span> ہیں؟</p>
+            <p>If you're experiencing any of these sciatica symptoms, you're not alone. We can help!</p>
+            <p className={styles.urduText}>اگر آپ کو ان میں سے کوئی شیاٹیکا کی علامات ہیں تو آپ اکیلے نہیں ہیں۔ ہم مدد کر سکتے ہیں!</p>
           </motion.div>
           
           <div className={styles.symptomsGrid}>
@@ -347,10 +312,10 @@ const SciaticaArthritisLanding = () => {
           </div>
           
           <div className={styles.symptomsCta}>
-            <h3>Don't Suffer in Silence! We Understand Your Pain</h3>
-            <p className={styles.urduText}>خاموشی سے تکلیف نہ اٹھائیں! ہم آپ کی تکلیف سمجھتے ہیں</p> <br/>
+            <h3>Don't Suffer in Silence! We Understand Your Sciatica Pain</h3>
+            <p className={styles.urduText}>خاموشی سے تکلیف نہ اٹھائیں! ہم آپ کی شیاٹیکا کی تکلیف سمجھتے ہیں</p> <br/>
             <div className={styles.badge}>
-               Call for Immediate Pain Relief
+               Call for Immediate Sciatica Pain Relief
             </div><br/>
             <div className={styles.symptomPhoneCta}>
               <a href="tel:+923329622164" className={styles.symptomPhone}>
@@ -373,10 +338,10 @@ const SciaticaArthritisLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Does This Sound Familiar? 😔</h2>
-            <p className={styles.urduText}>کیا یہ باتیں آپ کو جانی پہچانی لگتی ہیں؟ 😔</p>
-            <p>You're not alone. Most of our patients felt the same way before treatment</p>
-            <p className={styles.urduText}>آپ اکیلے نہیں ہیں۔ <span className={styles.highlight}>ہمارے زیادہ تر مریض علاج سے پہلے ایسا ہی محسوس کرتے تھے</span> </p>
+            <h2>Does This Sciatica Sound Familiar? 😔</h2>
+            <p className={styles.urduText}>کیا یہ شیاٹیکا کی باتیں آپ کو جانی پہچانی لگتی ہیں؟ 😔</p>
+            <p>You're not alone. Most of our sciatica patients felt the same way before treatment</p>
+            <p className={styles.urduText}>آپ اکیلے نہیں ہیں۔ <span className={styles.highlight}>ہمارے زیادہ تر شیاٹیکا مریض علاج سے پہلے ایسا ہی محسوس کرتے تھے</span> </p>
           </motion.div>
           
           <div className={styles.problemGrid}>
@@ -384,14 +349,14 @@ const SciaticaArthritisLanding = () => {
               <div className={styles.problemIcon}>💊</div>
               <h3>Painkillers Stopped Working</h3>
               <p className={styles.urduText}>درد کش ادویات کا اثر ختم</p>
-              <p>"The painkillers only worked for a few hours, then the pain came back worse"</p>
-              <p className={styles.urduText}>"درد کش ادویات صرف چند گھنٹوں تک کام کرتی تھیں، پھر درد اور بدتر ہو گیا"</p>
+              <p>"The painkillers only worked for a few hours, then the sciatica pain came back worse"</p>
+              <p className={styles.urduText}>"درد کش ادویات صرف چند گھنٹوں تک کام کرتی تھیں، پھر شیاٹیکا درد اور بدتر ہو گیا"</p>
             </div>
             
             <div className={styles.problemCard}>
               <div className={styles.problemIcon}>🚶</div>
-              <h3>Mobility Issues</h3>
-              <p className={styles.urduText}>حرکت میں دشواری</p>
+              <h3>Walking Difficulties</h3>
+              <p className={styles.urduText}>چلنے میں دشواری</p>
               <p>"I can't walk more than 10 minutes without severe pain shooting down my leg"</p>
               <p className={styles.urduText}>"میں شدید درد کے بغیر 10 منٹ سے زیادہ نہیں چل سکتا"</p>
             </div>
@@ -400,8 +365,8 @@ const SciaticaArthritisLanding = () => {
               <div className={styles.problemIcon}>🛌</div>
               <h3>Sleep Disturbance</h3>
               <p className={styles.urduText}>نیند میں خلل</p>
-              <p>"The pain wakes me up multiple times every night, I'm always exhausted"</p>
-              <p className={styles.urduText}>"درد مجھے رات میں کئی بار جگا دیتا ہے، میں ہمیشہ تھکا رہتا ہوں"</p>
+              <p>"The sciatica pain wakes me up multiple times every night, I'm always exhausted"</p>
+              <p className={styles.urduText}>"شیاٹیکا درد مجھے رات میں کئی بار جگا دیتا ہے، میں ہمیشہ تھکا رہتا ہوں"</p>
             </div>
             
             <div className={styles.problemCard}>
@@ -414,8 +379,8 @@ const SciaticaArthritisLanding = () => {
           </div>
           
           <div className={styles.problemCta}>
-            <h3>We Understand Your Pain. And We Have The Solution.</h3>
-            <p className={styles.urduText}>ہم آپ کی تکلیف سمجھتے ہیں۔ اور ہمارے پاس حل ہے۔</p>
+            <h3>We Understand Your Sciatica Pain. And We Have The Solution.</h3>
+            <p className={styles.urduText}>ہم آپ کی شیاٹیکا کی تکلیف سمجھتے ہیں۔ اور ہمارے پاس حل ہے۔</p>
             <br/>
             <div className={styles.problemPhoneCta}>
               <a href="tel:+923329622164" className={styles.problemPhone}>
@@ -438,8 +403,8 @@ const SciaticaArthritisLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Why Our Treatment <span className={styles.highlight}>Actually Works</span> When Others Failed</h2>
-            <p className={styles.urduText}>ہمارا علاج <span className={styles.highlight}>کیوں کام کرتا ہے</span> جب دوسرے ناکام ہو جاتے ہیں</p>
+            <h2>Why Our Sciatica Treatment <span className={styles.highlight}>Actually Works</span> When Others Failed</h2>
+            <p className={styles.urduText}>ہمارا شیاٹیکا علاج <span className={styles.highlight}>کیوں کام کرتا ہے</span> جب دوسرے ناکام ہو جاتے ہیں</p>
           </motion.div>
           
           <div className={styles.differenceGrid}>
@@ -447,16 +412,16 @@ const SciaticaArthritisLanding = () => {
               <div className={styles.differenceNumber}>1</div>
               <h3>No Surgery Required</h3>
               <p className={styles.urduText}>آپریشن کی ضرورت نہیں</p>
-              <p>Complete healing without risky operations, hospitalization, or long recovery periods. Natural nerve and joint regeneration.</p>
-              <p className={styles.urduText}>خطرناک آپریشن، ہسپتال میں داخلے یا طویل آرام کے بغیر مکمل شفا یابی۔ قدرتی اعصاب اور جوڑوں کی بحالی۔</p>
+              <p>Complete sciatica healing without risky operations, hospitalization, or long recovery periods. Natural nerve regeneration.</p>
+              <p className={styles.urduText}>خطرناک آپریشن، ہسپتال میں داخلے یا طویل آرام کے بغیر مکمل شفا یابی۔ قدرتی اعصاب کی بحالی۔</p>
             </div>
             
             <div className={styles.differenceCard}>
               <div className={styles.differenceNumber}>2</div>
               <h3>Address Root Causes</h3>
               <p className={styles.urduText}>مسئلے کی جڑ تک پہنچیں</p>
-              <p>We don't just mask pain. We identify and treat underlying causes—inflammation, nerve compression, joint degeneration.</p>
-              <p className={styles.urduText}>ہم صرف درد کو چھپاتے نہیں ہیں۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
+              <p>We don't just mask sciatica pain. We identify and treat underlying causes—nerve compression, inflammation, spinal issues.</p>
+              <p className={styles.urduText}>ہم صرف شیاٹیکا درد کو چھپاتے نہیں ہیں۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
             </div>
             
             <div className={styles.differenceCard}>
@@ -471,8 +436,8 @@ const SciaticaArthritisLanding = () => {
               <div className={styles.differenceNumber}>4</div>
               <h3>Proven Track Record</h3>
               <p className={styles.urduText}>ثابت شدہ کامیابی</p>
-              <p>95% success rate across 2000+ pain patients. Real results documented over 18+ years of specialized practice.</p>
-              <p className={styles.urduText}>2000+ مریضوں میں 95% کامیابی۔ 18+ سال کے تجربے میں ثابت شدہ نتائج۔</p>
+              <p>95% success rate across 1000+ sciatica patients. Real results documented over 18+ years of specialized practice.</p>
+              <p className={styles.urduText}>1000+ شیاٹیکا مریضوں میں 95% کامیابی۔ 18+ سال کے تجربے میں ثابت شدہ نتائج۔</p>
             </div>
           </div>
         </section>
@@ -486,10 +451,10 @@ const SciaticaArthritisLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Sciatica & Arthritis <span className={styles.highlight}>Success Stories</span></h2>
-            <p className={styles.urduText}>شیاٹیکا اور گنٹھیا <span className={styles.highlight}>کامیابی کی کہانیاں</span></p>
-            <p>Real patients who found relief through our natural treatment</p>
-            <p className={styles.urduText}>حقیقی مریض جنہیں ہمارے قدرتی علاج سے آرام ملا</p>
+            <h2>Sciatica <span className={styles.highlight}>Success Stories</span></h2>
+            <p className={styles.urduText}>شیاٹیکا <span className={styles.highlight}>کامیابی کی کہانیاں</span></p>
+            <p>Real sciatica patients who found relief through our natural treatment</p>
+            <p className={styles.urduText}>حقیقی شیاٹیکا مریض جنہیں ہمارے قدرتی علاج سے آرام ملا</p>
           </motion.div>
           
           <div className={styles.testimonialGrid}>
@@ -517,22 +482,11 @@ const SciaticaArthritisLanding = () => {
               </div>
             </div>
 
-            <div className={styles.testimonialCard}>
-              <div className={styles.quote}>"Dr asma is a very kind and professional.  She deals patients  very professionally  and kind heartedly."</div>
-              <div className={styles.patientInfo}>
-                <strong>Ehsan Ul haq ~ Rawalpindi</strong>
-                <span>★★★★★</span>
-                <span>Arthritis</span>
-                <span className={styles.urduText}>گنٹھیا کا درد</span>
-                <a href="https://maps.app.goo.gl/SNHHpLNWjCxrUaiA7" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
-              </div>
-            </div>
-
           </div>
           
           <div className={styles.testimonialsCta}>
-            <h3>Join Those Who Have Found Pain Relief Without Surgery</h3>
-            <p className={styles.urduText}>اُن افراد میں شامل ہوں جنہیں بغیر آپریشن درد سے آرام ملا</p>
+            <h3>Join Those Who Have Found Sciatica Relief Without Surgery</h3>
+            <p className={styles.urduText}>اُن افراد میں شامل ہوں جنہیں بغیر آپریشن شیاٹیکا سے آرام ملا</p>
             <div className={styles.testimonialPhoneCta}>
               <a href="tel:+923329622164" className={styles.testimonialPhone}>
                 <RiPhoneFill /> Dr. Asma: 0332 9622164
@@ -542,7 +496,7 @@ const SciaticaArthritisLanding = () => {
               </a>
             </div>
             <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">
-              Read More Success Stories → | مزید کامیابی کی آپ بیتیاں پڑھیں۔
+              Read More Success Stories → | کامیابی کی مزید آپ بیتیاں پڑھیں۔
             </a>
           </div>
         </section>
@@ -556,13 +510,13 @@ const SciaticaArthritisLanding = () => {
             variants={fadeIn}
             className={styles.urgencyContent}
           >
-            <div className={styles.urgencyBadge}>🌟 SPECIAL ATTENTION GUARANTEED | خصوصی توجہ کی ضمانت</div>
+            <div className={styles.urgencyBadge}> SPECIAL SCIATICA ATTENTION GUARANTEED <br/> خصوصی توجہ کی ضمانت</div>
             
-            <h2>Your Journey to Complete Pain-Free Living Starts Now</h2>
-            <p className={styles.urduText}>آپ کے درد سے پاک زندگی کے سفر کا آغاز اب ہوتا ہے</p>
+            <h2>Your Journey to Complete Sciatica Pain-Free Living Starts Now</h2>
+            <p className={styles.urduText}>آپ کے شیاٹیکا درد سے پاک زندگی کے سفر کا آغاز اب ہوتا ہے</p>
             
-            <p>Don't let nerve pain and joint issues control your life any longer. Our natural treatment has helped thousands avoid surgery and regain their mobility and comfort.</p>
-            <p className={styles.urduText}>عصبی درد اور جوڑوں کے مسائل کو اپنی زندگی پر حکومت نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو آپریشن سے بچایا ہے اور ان کی حرکت اور آرام واپس دلایا ہے۔</p>
+            <p>Don't let sciatica nerve pain control your life any longer. Our natural treatment has helped thousands avoid surgery and regain their mobility and comfort.</p>
+            <p className={styles.urduText}>شیاٹیکا عصبی درد کو اپنی زندگی پر حکومت نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو آپریشن سے بچایا ہے اور ان کی حرکت اور آرام واپس دلایا ہے۔</p>
             
             <div className={styles.urgencyStats}>
               <div className={styles.urgencyStat}>
@@ -572,8 +526,8 @@ const SciaticaArthritisLanding = () => {
                 >
                   <strong>1,000+</strong>
                 </motion.div>
-                <span>Pain Patients Helped</span>
-                <span className={styles.urduText}>درد کے مریضوں کی مدد</span>
+                <span>Sciatica Patients Helped</span>
+                <span className={styles.urduText}>شیاٹیکا مریضوں کی مدد</span>
               </div>
               <div className={styles.urgencyStat}>
                 <motion.div
@@ -582,8 +536,8 @@ const SciaticaArthritisLanding = () => {
                 >
                   <strong>18+</strong>
                 </motion.div>
-                <span>Years of Specialized Experience</span>
-                <span className={styles.urduText}>سالوں کا خصوصی تجربہ</span>
+                <span>Years of Sciatica Experience</span>
+                <span className={styles.urduText}>سالوں کا شیاٹیکا تجربہ</span>
               </div>
               <div className={styles.urgencyStat}>
                 <motion.div
@@ -600,7 +554,7 @@ const SciaticaArthritisLanding = () => {
             <div className={styles.patientPromise}>
               <div className={styles.promiseItem}>
                 <RiCheckboxCircleFill className={styles.promiseIcon} />
-                <span><strong>No Surgery Required</strong> - Complete healing without operations</span>
+                <span><strong>No Surgery Required</strong> - Complete sciatica healing without operations</span>
                 <span className={styles.urduText}><strong>آپریشن کی ضرورت نہیں</strong> - آپریشن کے بغیر مکمل شفا</span>
               </div>
               <div className={styles.promiseItem}>
@@ -626,8 +580,8 @@ const SciaticaArthritisLanding = () => {
                 <div>
                   <span>SPEAK WITH DR. ASMA ARSHAD</span>
                   <span className={styles.ctaUrdu}>ڈاکٹر عاصمہ ارشد سے براہ راست بات کریں</span>
-                  <small>Get Personalized Pain Relief Advice</small>
-                  <small className={styles.ctaUrdu}>ذاتی درد سے نجات کی راہنمائی حاصل کریں</small>
+                  <small>Get Personalized Sciatica Pain Relief Advice</small>
+                  <small className={styles.ctaUrdu}>ذاتی شیاٹیکا درد سے نجات کی راہنمائی حاصل کریں</small>
                 </div>
               </motion.a>
               
@@ -641,8 +595,8 @@ const SciaticaArthritisLanding = () => {
                 <div>
                   <span>SPEAK WITH DR ASAD AWAN</span>
                   <span className={styles.ctaUrdu}>ڈاکٹر اسد اعوان سے براہ راست بات کریں</span>
-                  <small>Send Your Pain Symptoms & Get Expert Opinion</small>
-                  <small className={styles.ctaUrdu}>اپنی درد کی علامات بھیجیں اور ماہرانہ رائے حاصل کریں</small>
+                  <small>Send Your Sciatica Symptoms & Get Expert Opinion</small>
+                  <small className={styles.ctaUrdu}>اپنی شیاٹیکا کی علامات بھیجیں اور ماہرانہ رائے حاصل کریں</small>
                 </div>
               </motion.a>
             </div>
@@ -650,17 +604,17 @@ const SciaticaArthritisLanding = () => {
             <div className={styles.finalGuarantee}>
               <div className={styles.guaranteeBadge}>
                 <RiStethoscopeFill />
-                <span><strong>COMPLETE PATIENT SATISFACTION FOCUS</strong></span>
-                <span className={styles.urduText}><strong>مکمل مریض کی تسلی پر توجہ</strong></span>
+                <span><strong>COMPLETE SCIATICA PATIENT SATISFACTION FOCUS</strong></span>
+                <span className={styles.urduText}><strong>مکمل شیاٹیکا مریض کی تسلی پر توجہ</strong></span>
               </div>
-              <p>We are committed to your complete pain relief and will work with you until you achieve the mobility and comfort you deserve without surgery.</p>
-              <p className={styles.urduText}>ہم آپ کے درد کے مکمل خاتمے کے لیے پرعزم ہیں اور آپ کے ساتھ اس وقت تک کام کریں گے جب تک آپ بغیر آپریشن کے وہ حرکت اور آرام حاصل نہیں کر لیتے جس کے آپ مستحق ہیں۔</p>
+              <p>We are committed to your complete sciatica pain relief and will work with you until you achieve the mobility and comfort you deserve without surgery.</p>
+              <p className={styles.urduText}>ہم آپ کے شیاٹیکا درد کے مکمل خاتمے کے لیے پرعزم ہیں اور آپ کے ساتھ اس وقت تک کام کریں گے جب تک آپ بغیر آپریشن کے وہ حرکت اور آرام حاصل نہیں کر لیتے جس کے آپ مستحق ہیں۔</p>
             </div>
             
             <div className={styles.immediateHelp}>
               <FiClock className={styles.helpIcon} />
-              <span><strong>IMMEDIATE ATTENTION AVAILABLE:</strong> Call now and get same-day pain relief guidance</span>
-              <span className={styles.urduText}><strong>فوری توجہ دستیاب:</strong> ابھی کال کریں اور اسی دن درد سے ریلیف کی راہنمائی حاصل کریں</span>
+              <span><strong>IMMEDIATE SCIATICA ATTENTION AVAILABLE:</strong> Call now and get same-day pain relief guidance</span>
+              <span className={styles.urduText}><strong>فوری شیاٹیکا توجہ دستیاب:</strong> ابھی کال کریں اور اسی دن درد سے ریلیف کی راہنمائی حاصل کریں</span>
             </div>
           </motion.div>
         </section>
@@ -672,7 +626,7 @@ const SciaticaArthritisLanding = () => {
           <div className={styles.clinicInfo}>
             <h4>Arshad Homeopathic Clinic <br/> ارشد ہومیوپیتھک کلینک</h4>
             <p>Muslim Town, Rawalpindi</p>
-            <p>18+ Years Specializing in Pain Management</p>
+            <p>18+ Years Specializing in Sciatica Treatment</p>
           </div>
           
           <div className={styles.footerCtas}>
@@ -686,10 +640,10 @@ const SciaticaArthritisLanding = () => {
         </div>
         
         <div className={styles.trustFooter}>
-          <span>✓ 2000+ Pain Patients Treated</span>
+          <span>✓ 1000+ Sciatica Patients Treated</span>
           <span>✓ 95% Success Rate</span>
-          <span>✓ 18+ Years Specialized Experience</span>
-          <span>✓ Surgery-Free Treatment Guaranteed</span>
+          <span>✓ 18+ Years Sciatica Experience</span>
+          <span>✓ Surgery-Free Sciatica Treatment Guaranteed</span>
         </div>
       </footer>
       
@@ -698,4 +652,4 @@ const SciaticaArthritisLanding = () => {
   );
 };
 
-export default SciaticaArthritisLanding;
+export default SciaticaLanding;

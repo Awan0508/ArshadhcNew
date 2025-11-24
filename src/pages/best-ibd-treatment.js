@@ -524,7 +524,7 @@ const IBDLanding = () => {
               </a>
             </div>
             <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">
-              Read More IBD Success Stories → | آنتوں کی سوزش کی کامیابی کی مزید آپ بیتیاں پڑھیں۔
+              Read More Success Stories → | کامیابی کی مزید آپ بیتیاں پڑھیں۔
             </a>
           </div>
         </section>
