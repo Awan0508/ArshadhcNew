@@ -1,11 +1,5 @@
-import Head from 'next/head';
 import styles from '../styles/adLanding.module.css';
 import { RiWhatsappFill, RiCheckboxCircleFill, RiStethoscopeFill, RiPhoneFill, RiArrowRightLine } from 'react-icons/ri';
-import { GiMoneyStack, GiStomach } from "react-icons/gi";
-import { SiKakaotalk } from "react-icons/si";
-import { RiMedicineBottleLine } from "react-icons/ri";
-import { PiBinocularsBold } from "react-icons/pi";
-import { GiStrong } from "react-icons/gi";
 import { FiClock, FiArrowRight } from "react-icons/fi";
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';

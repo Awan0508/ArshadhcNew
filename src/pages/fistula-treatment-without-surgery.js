@@ -1,7 +1,7 @@
-import Head from 'next/head';
 import styles from '../styles/adLanding.module.css';
 import { RiWhatsappFill, RiCheckboxCircleFill, RiStethoscopeFill, RiPhoneFill, RiArrowRightLine } from 'react-icons/ri';
-import { GiMoneyStack, GiStomach } from "react-icons/gi";
+import { RxHobbyKnife } from "react-icons/rx";
+import { GiMoneyStack } from "react-icons/gi";
 import { SiKakaotalk } from "react-icons/si";
 import { RiMedicineBottleLine } from "react-icons/ri";
 import { PiBinocularsBold } from "react-icons/pi";
@@ -11,54 +11,50 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import ClientProviders from '../app/ClientProviders';
 
+
+// Page-specific metadata overrides (merges with layout defaults)
 export async function generateMetadata() {
   return {
-    title: "Anal Fistula Treatment Without Surgery | 95% Success Rate | Rawalpindi | فسچولا کا بغیر آپریشن علاج",
-    description: "Finally! Get permanent relief from anal fistula WITHOUT surgery. 18+ years expertise. 1500+ patients treated successfully. Book FREE consultation. | فسچولا کا مکمل علاج بغیر آپریشن کے۔ 95% کامیابی۔ مفت کنسلٹیشن",
-    keywords: "anal fistula treatment, fistula in ano, non-surgical fistula treatment, homeopathic doctor, fistula pain relief, فسچولا کا علاج, بغیر آپریشن فسچولا کا علاج, فسچولا کا قدرتی علاج",
+    title: "Anal Fissure, Fistula & Piles Treatment Without Surgery | Arshad Homeopathic Clinic",
+    description: "Natural treatment for anal fissure, fistula, and piles without surgery. 95% success rate with homeopathic treatment. Expert doctors in Rawalpindi.",
+    keywords: "anal fissure treatment, fistula treatment, piles treatment, hemorrhoids, non-surgical treatment, homeopathic treatment, proctology",
     robots: { index: false, follow: false },
     openGraph: {
-      title: "Anal Fistula Treatment - 95% Success Without Surgery | فسچولا کا علاج",
-      description: "Stop suffering! Natural treatment that actually works for anal fistula. Proven results. Book consultation now! | فسچولا کے درد، پیپ، سوجن کا مستقل علاج",
+      title: "Non-Surgical Anal Fissure, Fistula & Piles Treatment | Arshad Homeopathic Clinic",
+      description: "95% success rate with natural homeopathic treatment for anal fissure, fistula, and piles. Expert care in Rawalpindi. Book now!",
       type: "website",
-      url: "https://www.arshadhc.com",
+      url: "https://www.arshadhc.com/landing",
       images: [
         {
-          url: "https://www.arshadhc.com/images/fistula-landing.jpg",
+          url: "https://www.arshadhc.com/images/landing-ad-banner.jpg",
           width: 1200,
           height: 630,
-          alt: "Natural Anal Fistula Treatment at Arshad Homeopathic Clinic",
+          alt: "Natural Treatment for Anal Fissure, Fistula & Piles",
         },
       ],
       siteName: "Arshad Homeopathic Clinic",
     },
     twitter: {
       card: "summary_large_image",
-      title: "Anal Fistula Treatment - 95% Success Rate | فسچولا کا علاج",
-      description: "Finally! Permanent relief from anal fistula without surgery. 18+ years expertise. | قدرتی ہومیوپیتھک علاج",
-      image: "https://www.arshadhc.com/images/fistula-landing.jpg",
+      title: "Non-Surgical Anal Fissure, Fistula & Piles Treatment",
+      description: "95% success rate with homeopathic treatment. Expert doctors in Rawalpindi. Book your consultation!",
+      image: "https://www.arshadhc.com/images/landing-ad-banner.jpg",
     },
     alternates: {
-      canonical: "https://www.arshadhc.com",
+      canonical: "https://www.arshadhc.com/landing",
     },
   };
 }
+
+
 
 const FistulaLanding = () => {
   const [active, setActive] = useState(false);
   const [player, setPlayer] = useState(null);
   const [isMuted, setIsMuted] = useState(true);
   const videoContainerRef = useRef(null);
-  const [showEmergencyPopup, setShowEmergencyPopup] = useState(false);
 
-  // Auto-show emergency popup after 8 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowEmergencyPopup(true);
-    }, 50000);
-    return () => clearTimeout(timer);
-  }, []);
-
+  // Animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -74,8 +70,8 @@ const FistulaLanding = () => {
     }
   };
 
-  // YouTube API code remains same...
   useEffect(() => {
+    // Load YouTube IFrame API
     if (!window.YT) {
       const tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
@@ -130,115 +126,75 @@ const FistulaLanding = () => {
     }
   };
 
-  const conditionSchema = {
-    "@context": "https://schema.org",
-    "@type": "MedicalCondition",
-    name: "Anal Fistula, Fissure and Piles",
-    alternateName: ["Fistula-in-Ano", "Anal Fissure", "Hemorrhoids"],
-    description: "Painful anal conditions causing discharge, bleeding, and discomfort including abnormal tunnels, tears and swollen veins",
-    cause: "Chronic constipation, infection, trauma, prolonged sitting",
-    possibleTreatment: {
-      "@type": "MedicalTherapy",
-      name: "Homeopathic Anal Fistula Treatment",
-      description: "Natural, non-surgical treatment for anal fistula with a 95% success rate",
-      url: "https://www.arshadhc.com",
-    },
-  };
 
-  const sanitizeJson = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
+  // Page-specific schema (conditionSchema for anal fissure, fistula, and piles)
+const conditionSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalCondition",
+  name: "Anal Fissure, Fistula, and Piles",
+  alternateName: ["Hemorrhoids", "Fistula-in-Ano", "Anal Tear"],
+  description: "Conditions causing pain, bleeding, and discomfort in the anal region, including tears, abnormal tunnels, and swollen veins",
+  cause: "Chronic constipation, trauma, infection, prolonged sitting",
+  possibleTreatment: {
+    "@type": "MedicalTherapy",
+    name: "Homeopathic Treatment for Anal Fissure, Fistula, and Piles",
+    description: "Natural, non-surgical treatment for anal fissure, fistula, and piles with a 95% success rate",
+    url: "https://www.arshadhc.com/landing",
+  },
+};
 
-  // Comprehensive symptoms list for anal fistula
-  const symptomsList = [
-    { en: "Persistent Pus Discharge", ur: "مسلسل پیپ کا اخراج", icon: "💧" },
-    { en: "Severe Anal Pain & Swelling", ur: "مقعد میں شدید درد اور سوجن", icon: "😫" },
-    { en: "Recurrent Abscess Formation", ur: "بار بار پھوڑے بننا", icon: "🔥" },
-    { en: "Blood in Stool", ur: "پاخانے میں خون آنا", icon: "🩸" },
-    { en: "Itching Around Anus", ur: "مقعد کے ارد گرد خارش", icon: "🤚" },
-    { en: "Pain During Bowel Movements", ur: "پاخانہ کرتے وقت درد", icon: "🚽" },
-    { en: "Foul Smelling Discharge", ur: "بدبودار مواد کا اخراج", icon: "👃" },
-    { en: "Fever with Anal Discomfort", ur: "بخار کے ساتھ مقعد میں تکلیف", icon: "🌡️" },
-    { en: "Difficulty Sitting", ur: "بیٹھنے میں دشواری", icon: "🪑" },
-    { en: "Skin Irritation Around Anus", ur: "مقعد کے ارد گرد جلد کی جلن", icon: "🦠" },
-    { en: "Feeling of Lump Near Anus", ur: "مقعد کے پاس گانٹھ محسوس ہونا", icon: "🔴" },
-    { en: "Constant Moisture", ur: "مسلسل نمی کا احساس", icon: "💦" },
-    { en: "Pain Radiating to Lower Back", ur: "کمر کے نچلے حصے میں درد", icon: "🔙" },
-    { en: "Difficulty Walking", ur: "چلنے میں دشواری", icon: "🚶" },
-    { en: "Anxiety About Surgery", ur: "آپریشن کے بارے میں پریشانی", icon: "😥" },
-    { en: "Multiple Failed Treatments", ur: "کئی علاج ناکام ہو چکے", icon: "❌" }
-  ];
+// Sanitize JSON to prevent XSS (same as layout)
+const sanitizeJson = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
+
+
+
 
   return (
     <div id="fistulaadvert">
-      {/* Emergency Consultation Popup */}
-      {showEmergencyPopup && (
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className={styles.emergencyPopup}
-        >
-          <div className={styles.popupContent}>
-            <button 
-              className={styles.closePopup}
-              onClick={() => setShowEmergencyPopup(false)}
-            >
-              ×
-            </button>
-            <h3>🚨 Emergency Fistula Relief</h3>
-            <p>Are you in pain right now? Speak directly with our specialist doctors for immediate relief guidance.</p>
-            <p className={styles.urduText}>کیا آپ کو ابھی تکلیف ہے؟ فوری سکون کی راہنمائی کے لیے ہمارے ڈاکٹرز سے براہ راست بات کریں۔</p>
-            <div className={styles.popupButtons}>
-              <a href="https://wa.me/923329622164" className={styles.popupWhatsapp}>
-                <RiWhatsappFill /> WhatsApp Dr. Asma   |    ڈاکٹر عاصمہ   
-              </a>
-              <a href="https://wa.me/923125122488" className={styles.popupCall}>
-                <RiWhatsappFill />WhatsApp Dr. Asad | ڈاکٹر اسد
-              </a>
-            </div>
-          </div>
-        </motion.div>
-      )}
-
-      {/* Sticky Emergency Bar */}
+      
+      {/* Sticky CTA Header */}
       <header className={styles.stickyHeader}>
         <div className={styles.stickyContainer}>
           <div className={styles.stickyContent}>
+            <a href="https://wa.me/923329622164" className={styles.whatsappCta} target="_blank" rel="noopener noreferrer"
+            id="whatsApp-dr-asma"
+            data-doctor="dr_asma"
+            data-type="whatsapp"
+            >
+              <RiWhatsappFill /> Dr Asma 0332 9622164
+            </a>
             <motion.span
-              className={styles.emergencyAlert}
-              animate={{ 
-                backgroundColor: ['#ff4444', '#ff6b6b', '#ff4444'],
-                scale: [1, 1.05, 1]
-              }}
+              className={styles.stickyText}
+              animate={{ opacity: [1, 0.3, 1] }}
               transition={{
-                duration: 2,
+                duration: 1.5,
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
             >
-              <a href="/Testimonials" target="_blank" rel="noopener noreferrer">
-            For More Information Visit Our Website
-          </a>
+              Get free consultation today!
             </motion.span>
-            
-            <div className={styles.stickyCtas}>
-              <a href="https://wa.me/923329622164" className={styles.whatsappCta}>
-                <RiWhatsappFill /> Dr Asma
-              </a>
-              <a href="https://wa.me/923125122488" className={styles.whatsappCta}>
-                <RiWhatsappFill /> Dr Asad
-              </a>
-            </div>
+            <a href="https://wa.me/923125122488" className={styles.whatsappCta} target="_blank" rel="noopener noreferrer"
+            id="whatsApp-dr-asad"
+            data-doctor="dr_asad"
+            data-type="whatsapp"
+            >
+              <RiWhatsappFill /> Dr Asad 0312 5122488
+            </a>
           </div>
         </div>
       </header>
-
+      
+      {/* Inject page-specific JSON-LD schema here (after common elements from layout) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: sanitizeJson(conditionSchema) }}
         key="condition-schema"
       />
 
+
       <main className={styles.container}>
-        {/* Hero Section - Bilingual */}
+        {/* Hero Section */}
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <motion.div 
@@ -247,57 +203,26 @@ const FistulaLanding = () => {
               variants={fadeIn}
               className={styles.heroText}
             >
-              <div className={styles.badge}>
-                ⚡ 95% SUCCESS RATE • 1500+ PATIENTS TREATED | پچانوے فیصد کامیابی
-              </div>
+              <h1>End Anal Pain <span className={styles.highlight}>Naturally</span></h1>
+              <p className={styles.heroSubtitle}>Fissure • Fistula • Piles Treatment | 95% Success Rate | 18+ Years Experience</p>
               
-              <h1>
-                <span className={styles.mainHeadline}>Tired of <span className={styles.highlight}>Anal Fistula Pain</span> Ruining Your Life?</span>
-                <span className={styles.urduHeadline}>کیا <span className={styles.highlight}> فسچولا کی تکلیف </span>آپ کی زندگی برباد کر رہی ہے؟</span>
-                <span className={styles.subHeadline}>Finally Discover The Natural Solution That Actually <span className={styles.highlight}>Works Without Surgery</span></span>
-                <span className={styles.urduSubHeadline}>فسچولا کا قدرتی علاج جو واقعی <span className={styles.highlight}>بغیر آپریشن کام کرتا ہے</span></span>
-              </h1>
-              
-              <p className={styles.heroSubtitle}>
-                <strong>Stop the endless cycle of pain, discharge, and surgery fear.</strong> Our 18+ years proven homeopathic treatment addresses the <strong>root cause</strong> of your fistula—without surgery, without side effects, without breaking the bank.
-              </p>
-              <p className={styles.urduText}>
-                <strong>فسچولا کے درد، پیپ اور آپریشن کے خوف کا خاتمہ کریں۔</strong> ہمارا 18+ سال کا ثابت شدہ ہومیوپیتھک علاج آپ کے مسئلے کی <strong>جڑ</strong> پر کام کرتا ہے—بغیر آپریشن، بغیر سائیڈ ایفیکٹس، بغیر زیادہ خرچ کے۔
-              </p>
-
-              {/* Primary CTA */}
-              <div className={styles.heroCtas}>
-                <motion.a 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/923329622164"
-                  className={styles.emergencyCta}
-                >
-                  <RiWhatsappFill />
-                  <div>
-                    <span className={styles.ctaMain}>Speak Directly With Dr. Asma</span>
-                    <span className={styles.ctaUrdu}>اعتماد کے ساتھ مشورہ کریں</span>
-                    <span className={styles.ctaSub}>Discuss With Confidence</span>
-                  </div>
-                </motion.a>
-                
-                <motion.a 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/923125122488"
-                  className={styles.whatsappCtaLarge}
-                >
-                  <RiWhatsappFill />
-                  <div>
-                    <span className={styles.ctaMain}>Speak Directly With Dr. Asad</span>
-                    <span className={styles.ctaUrdu}>واٹس ایپ پر مفت مشورہ کریں</span>
-                    <span className={styles.ctaSub}>FREE WhatsApp Consultation</span>
-                  </div>
-                </motion.a>
+              <div className={styles.benefitHighlights}>
+                <div className={styles.benefitItem}>
+                  <RiCheckboxCircleFill className={styles.benefitIcon} />
+                  <span>No Surgery Required</span>
+                </div>
+                <div className={styles.benefitItem}>
+                  <RiStethoscopeFill className={styles.benefitIcon} />
+                  <span>Expert Medical Care</span>
+                </div>
+                <div className={styles.benefitItem}>
+                  <GiMoneyStack className={styles.benefitIcon} />
+                  <span>Affordable Treatment</span>
+                </div>
               </div>
             </motion.div>
 
-            {/* Video Section */}
+            {/* YouTube Video */}
             <motion.div 
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0, transition: { delay: 0.3, duration: 0.8 } }}
@@ -310,18 +235,92 @@ const FistulaLanding = () => {
                     {isMuted ? '🔇 Unmute' : '🔊 Mute'}
                   </button>
                 </div>
-                <div className={styles.videoCaption}>
-                  <h3>WATCH: How We Cured Fistula Patients Without Surgery</h3>
-                  <p className={styles.urduText}>دیکھیں: ہم نے فسچولا کے مریضوں کا بغیر آپریشن علاج کیسے کیا</p>
-                  <p>"I avoided surgery after 12 years of suffering" - Muhammad Ali</p>
-                </div>
+              </div>
+              <div className={styles.videoCaption}>
+                <p>Watch how our treatment works</p>
               </div>
             </motion.div>
+
+            <div className={styles.ctaGroup}>
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="#consult" 
+                className={styles.secondaryCta} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <RiArrowRightLine /> Book Video Consultation
+              </motion.a>
+            </div>
+          </div>
+        </section>
+      
+        {/* Doctors Profile */}
+        <section className={styles.doctorsSection}>
+          <h2 className={styles.sectionTitle}>Our <span className={styles.highlight}>Specialized</span> Doctors</h2>
+          <div className={styles.doctorsGrid}>
+            <div className={styles.doctorCard}>
+              <div className={styles.doctorImage} style={{ backgroundImage: "url('/images/dr-asma-arshad.jpg')" }}></div>
+              <h3>Dr. Mrs. Asma Arshad</h3>
+              <p>18+ years experience</p>
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="tel:+923329622164" 
+                id="phone-dr-asma" 
+                data-doctor="dr_asma"
+                data-type="phone"
+                className={styles.primaryCta} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <RiPhoneFill /> Call for Consultation
+              </motion.a>
+            </div>
+            <div className={styles.doctorCard}>
+              <div className={styles.doctorImage} style={{ backgroundImage: "url('/images/dr-asad-awan.jpg')" }}></div>
+              <h3>Dr. Asad Awan</h3>
+              <p>20+ years experience</p>
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="tel:+923125122488" 
+                id="phone-dr-asad" 
+                data-doctor="dr_asad"
+                data-type="phone"
+                className={styles.primaryCta}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <RiPhoneFill /> Call for Consultation
+              </motion.a>
+            </div>
           </div>
         </section>
 
-        {/* Comprehensive Symptoms Section */}
-        <section className={styles.symptomsSection}>
+        {/* Statistics Bar */}
+        <section className={styles.stats}>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>1500+</span>
+            <span className={styles.statLabel}>Proctology Patients Treated</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>95%</span>
+            <span className={styles.statLabel}>Success Rate</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>18+</span>
+            <span className={styles.statLabel}>Years Experience</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>0%</span>
+            <span className={styles.statLabel}>Surgery Needed</span>
+          </div>
+        </section>
+
+        {/* Conditions We Treat */}
+        <section className={styles.benefits}>
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -329,162 +328,192 @@ const FistulaLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Do You Have These <span className={styles.highlight}>Fistula Symptoms</span>?</h2>
-            <p className={styles.urduText}>کیا آپ کو یہ <span className={styles.highlight}>فسچولا کی علامات</span> ہیں؟</p>
-            <p>If you're experiencing any of these symptoms, you're not alone. We can help!</p>
-            <p className={styles.urduText}>اگر آپ کو ان میں سے کوئی علامات ہیں تو آپ اکیلے نہیں ہیں۔ ہم مدد کر سکتے ہیں!</p>
+            <h2>Proctology Conditions <span className={styles.highlight}>We Treat</span></h2>
+            <p>Comprehensive natural treatment for anal and rectal disorders</p>
           </motion.div>
-          
-          <div className={styles.symptomsGrid}>
-            {symptomsList.map((symptom, index) => (
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className={styles.benefitsGrid}
+          >
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <span className={styles.conditionNumber}>01</span>
+              </div>
+              <h3>Anal Fistula</h3>
+              <p>Complete healing without surgery, prevent recurrence</p>
+            </motion.div>
+            
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <span className={styles.conditionNumber}>02</span>
+              </div>
+              <h3>Anal Fissure</h3>
+              <p>Heal painful tears, stop bleeding, restore comfort</p>
+            </motion.div>
+            
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <span className={styles.conditionNumber}>03</span>
+              </div>
+              <h3>Piles (Hemorrhoids)</h3>
+              <p>Shrink hemorrhoids, relieve pain and bleeding naturally</p>
+            </motion.div>
+            
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <span className={styles.conditionNumber}>04</span>
+              </div>
+              <h3>Anal Abscess</h3>
+              <p>Resolve infections without surgical drainage</p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <span className={styles.conditionNumber}>05</span>
+              </div>
+              <h3>Pruritus Ani</h3>
+              <p>Stop chronic itching and irritation effectively</p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <span className={styles.conditionNumber}>06</span>
+              </div>
+              <h3>Proctitis</h3>
+              <p>Reduce inflammation and discomfort naturally</p>
+            </motion.div>
+          </motion.div>
+        </section>
+
+        {/* Key Benefits */}
+        <section className={styles.benefits}>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            className={styles.sectionHeader}
+          >
+            <h2>Why <span className={styles.highlight}>Choose Our</span> Natural Treatment?</h2>
+            <p>Experience complete healing without surgery or side effects</p>
+          </motion.div>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className={styles.benefitsGrid}
+          >
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <RxHobbyKnife className={styles.benefitIcon} />
+              </div>
+              <h3>No Surgery Required</h3>
+              <p>Heal naturally without painful operations or hospitalization</p>
+            </motion.div>
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <RiStethoscopeFill className={styles.benefitIcon} />
+              </div>
+              <h3>Expert Care</h3>
+              <p>18+ years specialized experience in proctology treatment</p>
+            </motion.div>
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <RiCheckboxCircleFill className={styles.benefitIcon} />
+              </div>
+              <h3>Prevent Recurrence</h3>
+              <p>Address root causes to stop conditions from returning</p>
+            </motion.div>
+            <motion.div variants={fadeIn} className={styles.benefitCard}>
+              <div className={styles.benefitIconContainer}>
+                <GiMoneyStack className={styles.benefitIcon} />
+              </div>
+              <h3>Affordable</h3>
+              <p>70% cheaper than surgical options</p>
+            </motion.div>
+          </motion.div>
+        </section>
+
+        {/* Treatment Process */}
+        <section className={styles.process}>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            className={styles.sectionHeader}
+          >
+            <h2>Our <span className={styles.highlight}>4-Step</span> Healing Process</h2>
+            <p>Your journey to complete recovery without surgery</p>
+          </motion.div>
+          <div className={styles.processContainer}>
+            <div className={styles.processLine}></div>
+            <div className={styles.processSteps}>
               <motion.div 
-                key={index}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeIn}
-                className={styles.symptomCard}
+                className={styles.processStep}
               >
-                <div className={styles.symptomIcon}>{symptom.icon}</div>
-                <h3>{symptom.en}</h3>
-                <p className={styles.urduText}>{symptom.ur}</p>
+                <div className={styles.stepNumber}>1</div>
+                <div className={styles.stepContent}>
+                  <SiKakaotalk className={styles.stepIcon} />
+                  <h3>Detailed Consultation</h3>
+                  <p>Physical or online assessment of your condition</p>
+                </div>
               </motion.div>
-            ))}
-          </div>
-          
-          <div className={styles.symptomsCta}>
-            <h3>Don't Suffer in Silence! We Understand Your Pain</h3>
-            <p className={styles.urduText}>خاموشی سے تکلیف نہ اٹھائیں! ہم آپ کی تکلیف سمجھتے ہیں</p> <br/>
-            <div className={styles.badge}>
-               Call for Immediate Help
-            </div><br/>
-            <div className={styles.symptomPhoneCta}>
-              <a href="tel:+923329622164" className={styles.symptomPhone}>
-                <RiPhoneFill /> Dr. Asma: 0332 9622164
-              </a>
-              <a href="tel:+923125122488" className={styles.symptomPhone1}>
-                <RiPhoneFill /> Dr. Asad: 0312 5122488
-              </a>
-            </div>
-            
-          </div>
-        </section>
-
-        {/* The Problem Section - Bilingual */}
-        <section className={styles.problemSection}>
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className={styles.sectionHeader}
-          >
-            <h2>Does This Sound Familiar? 😔</h2>
-            <p className={styles.urduText}>کیا یہ باتیں آپ کو جانی پہچانی لگتی ہیں؟ 😔</p>
-            <p>You're not alone. Most of our patients felt the same way before treatment</p>
-            <p className={styles.urduText}>آپ اکیلے نہیں ہیں۔ <span className={styles.highlight}>ہمارے زیادہ تر مریض علاج سے پہلے ایسا ہی محسوس کرتے تھے</span> </p>
-          </motion.div>
-          
-          <div className={styles.problemGrid}>
-            <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>🔪</div>
-              <h3>Surgery Fear</h3>
-              <p className={styles.urduText}>آپریشن کا خوف</p>
-              <p>"I'm terrified of surgery and the long recovery period"</p>
-              <p className={styles.urduText}>"میں آپریشن اور طویل آرام کے دورانیے سے خوفزدہ ہوں"</p>
-            </div>
-            
-            <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>💧</div>
-              <h3>Constant Discharge</h3>
-              <p className={styles.urduText}>مسلسل مواد کا اخراج</p>
-              <p>"I have to change pads multiple times a day due to discharge"</p>
-              <p className={styles.urduText}>"مواد کے اخراج کی وجہ سے مجھے دن میں کئی بار پیڈ بدلنا پڑتے ہیں"</p>
-            </div>
-            
-            <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>🪑</div>
-              <h3>Sitting Discomfort</h3>
-              <p className={styles.urduText}>بیٹھنے میں تکلیف</p>
-              <p>"I can't sit for more than 15 minutes without severe pain"</p>
-              <p className={styles.urduText}>"شدید درد کے بغیر میں 15 منٹ سے زیادہ نہیں بیٹھ سکتا"</p>
-            </div>
-            
-            <div className={styles.problemCard}>
-              <div className={styles.problemIcon}>😔</div>
-              <h3>Social Embarrassment</h3>
-              <p className={styles.urduText}>سماجی شرمندگی</p>
-              <p>"The smell and constant discomfort make me avoid social situations"</p>
-              <p className={styles.urduText}>"بدبو اور مسلسل تکلیف مجھے سماجی حالات سے بچنے پر مجبور کرتی ہے"</p>
-            </div>
-          </div>
-          
-          <div className={styles.problemCta}>
-            <h3>We Understand Your Pain. And We Have The Solution.</h3>
-            <p className={styles.urduText}>ہم آپ کی تکلیف سمجھتے ہیں۔ اور ہمارے پاس حل ہے۔</p>
-            <br/>
-            <div className={styles.problemPhoneCta}>
-              <a href="tel:+923329622164" className={styles.problemPhone}>
-                <RiPhoneFill />  خواتین رابطہ کریں 
-              </a><span/>
-              <a href="tel:+923125122488" className={styles.problemPhone1}>
-                <RiPhoneFill /> مرد رابطہ کریں  
-              </a>
-            </div>
-            
-          </div>
-        </section>
-
-        {/* Why We're Different - Bilingual */}
-        <section className={styles.difference}>
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className={styles.sectionHeader}
-          >
-            <h2>Why Our Treatment <span className={styles.highlight}>Actually Works</span> When Others Failed</h2>
-            <p className={styles.urduText}>ہمارا علاج <span className={styles.highlight}>کیوں کام کرتا ہے</span> جب دوسرے ناکام ہو جاتے ہیں</p>
-          </motion.div>
-          
-          <div className={styles.differenceGrid}>
-            <div className={styles.differenceCard}>
-              <div className={styles.differenceNumber}>1</div>
-              <h3>No Surgery Required</h3>
-              <p className={styles.urduText}>آپریشن کی ضرورت نہیں</p>
-              <p>Complete healing without painful operations, hospitalization, or long recovery periods. Natural tissue regeneration.</p>
-              <p className={styles.urduText}>تکلیف دہ آپریشن، ہسپتال میں داخلے یا طویل آرام کے بغیر مکمل شفا یابی۔ قدرتی ؤتکوں کی بحالی۔</p>
-            </div>
-            
-            <div className={styles.differenceCard}>
-              <div className={styles.differenceNumber}>2</div>
-              <h3>Address Root Causes</h3>
-              <p className={styles.urduText}>مسئلے کی جڑ تک پہنچیں</p>
-              <p>We don't just treat symptoms. We identify and treat underlying causes—infection, constipation, weak immunity.</p>
-              <p className={styles.urduText}>ہم صرف علامات کا علاج نہیں کرتے۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
-            </div>
-            
-            <div className={styles.differenceCard}>
-              <div className={styles.differenceNumber}>3</div>
-              <h3>Natural & Safe</h3>
-              <p className={styles.urduText}>قدرتی اور محفوظ</p>
-              <p>Zero side effects. No chemical dependency. Just your body's natural healing ability activated by our specialized remedies.</p>
-              <p className={styles.urduText}>سائیڈ ایفیکٹس سے پاک۔ کیمیکل سے پاک۔ جسم کی قدرتی شفا یابی کی صلاحیت کو بیدار کریں۔</p>
-            </div>
-            
-            <div className={styles.differenceCard}>
-              <div className={styles.differenceNumber}>4</div>
-              <h3>Proven Track Record</h3>
-              <p className={styles.urduText}>ثابت شدہ کامیابی</p>
-              <p>95% success rate across 1500+ fistula patients. Real results documented over 18+ years of specialized practice.</p>
-              <p className={styles.urduText}>1500+ مریضوں میں 95% کامیابی۔ 18+ سال کے تجربے میں ثابت شدہ نتائج۔</p>
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                className={styles.processStep}
+              >
+                <div className={styles.stepNumber}>2</div>
+                <div className={styles.stepContent}>
+                  <RiMedicineBottleLine className={styles.stepIcon} />
+                  <h3>Personalized Medicine</h3>
+                  <p>Customized homeopathic treatment plan</p>
+                </div>
+              </motion.div>
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                className={styles.processStep}
+              >
+                <div className={styles.stepNumber}>3</div>
+                <div className={styles.stepContent}>
+                  <PiBinocularsBold className={styles.stepIcon} />
+                  <h3>Regular Monitoring</h3>
+                  <p>No extra charges for additional medicines during treatment</p>
+                </div>
+              </motion.div>
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                className={styles.processStep}
+              >
+                <div className={styles.stepNumber}>4</div>
+                <div className={styles.stepContent}>
+                  <GiStrong className={styles.stepIcon} />
+                  <h3>Complete Recovery</h3>
+                  <p>Average 3-6 months to full healing</p>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
-
-        {/* Testimonials Section - Bilingual */}
+        {/* Testimonials - Keeping original success stories */}
         <section className={styles.testimonials}>
           <motion.div 
             initial="hidden"
@@ -493,34 +522,32 @@ const FistulaLanding = () => {
             variants={fadeIn}
             className={styles.sectionHeader}
           >
-            <h2>Real <span className={styles.highlight}>Success Stories</span> From Our Patients</h2>
-            <p className={styles.urduText}>ہمارے مریضوں کی <span className={styles.highlight}>کامیابی کی حقیقی کہانیاں</span></p>
-            <p>Don't just take our word for it. Hear from patients who found relief through our natural treatment.</p>
-            <p className={styles.urduText}>صرف ہماری بات پر یقین نہ کریں۔ ان مریضوں سے سنیں جنہیں ہمارے قدرتی علاج سے آرام ملا۔</p>
+            <h2>Success <span className={styles.highlight}>Stories</span></h2>
+            <p>Real patients who found relief through our treatment</p>
           </motion.div>
-          
           <div className={styles.testimonialGrid}>
+            {/* Original testimonials remain unchanged */}
             <div className={styles.testimonialCard}>
               <div className={styles.quote}>"I reached out to Dr. Asad after visiting his website, having suffered from an anal fistula for the past 10–12 years. I had previously tried homeopathy several times without success and was seriously considering surgery. However, I decided to give homeopathy one last try and contacted Dr. Asad. After just one month of his treatment, the discharge and pus had reduced by almost 60%. By the second month, it had completely stopped. With his suggested diet changes and medication, I believe I am now on the road to recovery. I'm sincerely grateful to Dr. Asad—may God bless him."</div>
               <div className={styles.patientInfo}>
                 <strong>Muhammad Ali ~ Karachi</strong>
                 <span>★★★★★</span>
-                <span>12 Years Long Fistula Resolved Without Surgery</span>
-                <span className={styles.urduText}>12 سال پرانا فسچولا بغیر آپریشن کے حل ہوا</span>
+                <span>12-Year-Old Fistula Resolved Without Surgery</span>
                 <a href="https://maps.app.goo.gl/1MVGEgjdA6RpVDyz5" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
             
+
             <div className={styles.testimonialCard}>
               <div className={styles.quote}>"Dr.Asma is very humble. She listens very carefully . I was suffering from anal fissure and she diagnosed my issue and I m under treatment. It's very effective and I m getting better day by day. Her clinic is highly recommended. Go and seek ur medical treatment on time. Thanks."</div>
               <div className={styles.patientInfo}>
-                <strong>Muhammad Abdullah</strong>
+                <strong>Muhammad Abdullah </strong>
                 <span>★★★★★</span>
                 <span>Improving Fistula Without Surgery</span>
-                <span className={styles.urduText}>بغیر آپریشن فسچولا میں بہتری</span>
                 <a href="https://maps.app.goo.gl/BRRpG8ZDFdtGAJj98" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
+
 
             <div className={styles.testimonialCard}>
               <div className={styles.quote}>"Best Homeopathic clinic for Anal Fistula .Hi My Name is Yasir Mehmood I have Fistula issue last eight years I used a lot of medicine but cant relief properly.Than I found Arshad Homeopathic clinic in Google and call the Dr Asad and asked my problem he gave me the medicine.I used the medicine properly now my Fistula issue is resolved thank you Dr Asad for your best treatment for my Fistula issue"</div>
@@ -528,7 +555,6 @@ const FistulaLanding = () => {
                 <strong>Yasir Mahmood ~ Saudi Arabia</strong>
                 <span>★★★★★</span>
                 <span>8-Year-Old Fistula Resolved Without Surgery</span>
-                <span className={styles.urduText}>8 سال پرانا فسچولا بغیر آپریشن کے حل ہوا</span>
                 <a href="https://maps.app.goo.gl/fbzRUk6SFXvENefF8" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
@@ -539,7 +565,6 @@ const FistulaLanding = () => {
                 <strong>Abeera Touqeer ~ Rawalpindi</strong>
                 <span>★★★★★</span>
                 <span>Recovered in 7 months</span>
-                <span className={styles.urduText}>7 ماہ میں مکمل صحت یابی</span>
                 <a href="https://maps.app.goo.gl/9NqJkNhob5LrvbF68" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
@@ -550,7 +575,6 @@ const FistulaLanding = () => {
                 <strong>Muhammad Jibran Sohail ~ Islamabad</strong>
                 <span>★★★★★</span>
                 <span>Recovered in 6 months</span>
-                <span className={styles.urduText}>6 ماہ میں مکمل صحت یابی</span>
                 <a href="https://maps.app.goo.gl/5QP7qLrNPCAv282P6" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
@@ -560,8 +584,6 @@ const FistulaLanding = () => {
               <div className={styles.patientInfo}>
                 <strong>Luqman Ahmad ~ Hong Kong</strong>
                 <span>★★★★★</span>
-                <span>Avoided Surgery Successfully</span>
-                <span className={styles.urduText}>آپریشن سے کامیابی سے بچ گئے</span>
                 <a href="https://maps.app.goo.gl/XGwDf11z63vgLkei8" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
@@ -572,7 +594,6 @@ const FistulaLanding = () => {
                 <strong>Ahtazaz Qureshi ~ Taxilla</strong>
                 <span>★★★★★</span>
                 <span>16-Year-Old Fistula Resolved Without Surgery</span>
-                <span className={styles.urduText}>16 سال پرانا فسچولا بغیر آپریشن کے حل ہوا</span>
                 <a href="https://g.co/kgs/Jc34awd" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
@@ -583,179 +604,108 @@ const FistulaLanding = () => {
                 <strong>Sabahat Tariq ~ Rawalpindi</strong>
                 <span>★★★★★</span>
                 <span>7-year chronic case resolved</span>
-                <span className={styles.urduText}>7 سال پرانا پرانا کیس حل ہوا</span>
                 <a href="https://maps.app.goo.gl/tzCnwDU6ynd78KS26" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
           </div>
-          
-          <div className={styles.testimonialsCta}>
-            <h3>Join Those Who Have Found Relief Without Surgery</h3>
-            <p className={styles.urduText}>اُن افراد میں شامل ہوں جنہیں بغیر آپریشن آرام ملا</p>
-            <div className={styles.testimonialPhoneCta}>
-              <a href="tel:+923329622164" className={styles.testimonialPhone}>
-                <RiPhoneFill /> Dr. Asma: 0332 9622164
-              </a>
-              <a href="tel:+923125122488" className={styles.testimonialPhone1}>
-                <RiPhoneFill /> Dr. Asad: 0312 5122488
-              </a>
-            </div>
-            <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">
-              Read More Success Stories → | مزید کامیابی کی آپ بیتیاں پڑھیں۔
-            </a>
-          </div>
+          <a href="/Testimonials" className={styles.moreTestimonials} target="_blank" rel="noopener noreferrer">View More Success Stories →</a>
         </section>
 
+        {/* Urgency Section */}
+        <motion.section 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+          className={styles.urgency}
+        >
+          <div className={styles.urgencyContent}>
+            <div className={styles.urgencyIconContainer}>
+              <FiClock className={styles.urgencyIcon} /> 
+            </div>
+            <h3>Find Relief Today - 95% Success Rate</h3>
+            <p>Stop Anal Pain – Proven Natural Relief</p>
+            <p>No Surgery – No Side Effects</p>
+            <motion.button
+              onClick={() => setActive(!active)} 
+              initial={{opacity: 0.45}}
+              animate={{opacity: 1.2}}
+              transition={{type: 'spring', duration:1, repeat: Infinity, repeatType: 'reverse' }}
+              className={styles.urgencyCta}
+            >
+              <a href="mailto:ask2cure@gmail.com">
+                <strong>Book Your Free Consultation Now</strong>
+              </a>
+            </motion.button>
+          </div>
+        </motion.section>
 
-
-
-        {/* Final Urgent CTA - Bilingual */}
-        <section className={styles.finalUrgency}>
+        {/* Final CTA Section */}
+        <section className={styles.finalCta} id="consult">
           <motion.div 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className={styles.urgencyContent}
+            className={styles.finalCtaContent}
           >
-            <div className={styles.urgencyBadge}>🌟 SPECIAL ATTENTION GUARANTEED | خصوصی توجہ کی ضمانت</div>
-            
-            <h2>Your Journey to Complete Fistula Healing Starts Now</h2>
-            <p className={styles.urduText}>آپ کے فسچولا کے مکمل علاج کا سفر اب شروع ہوتا ہے</p>
-            
-            <p>Don't let fistula control your life any longer. Our natural treatment has helped thousands avoid surgery and regain their comfort.</p>
-            <p className={styles.urduText}>فسچولا کو اپنی زندگی پر حکومت نہ کرنے دیں۔ ہمارے قدرتی علاج نے ہزاروں کو آپریشن سے بچایا ہے اور ان کی آرام واپس دلایا ہے۔</p>
-            
-            <div className={styles.urgencyStats}>
-              <div className={styles.urgencyStat}>
-                <motion.div
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  <strong>1,500+</strong>
-                </motion.div>
-                <span>Fistula Patients Helped</span>
-                <span className={styles.urduText}>فسچولا کے مریضوں کی مدد</span>
-              </div>
-              <div className={styles.urgencyStat}>
-                <motion.div
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
-                >
-                  <strong>18+</strong>
-                </motion.div>
-                <span>Years of Specialized Experience</span>
-                <span className={styles.urduText}>سالوں کا خصوصی تجربہ</span>
-              </div>
-              <div className={styles.urgencyStat}>
-                <motion.div
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-                >
-                  <strong>95%</strong>
-                </motion.div>
-                <span>Avoided Surgery Successfully</span>
-                <span className={styles.urduText}>آپریشن سے بچ گئے</span>
-              </div>
-            </div>
-            
-            <div className={styles.patientPromise}>
-              <div className={styles.promiseItem}>
-                <RiCheckboxCircleFill className={styles.promiseIcon} />
-                <span><strong>No Surgery Required</strong> - Complete healing without operations</span>
-                <span className={styles.urduText}><strong>آپریشن کی ضرورت نہیں</strong> - آپریشن کے بغیر مکمل شفا</span>
-              </div>
-              <div className={styles.promiseItem}>
-                <RiCheckboxCircleFill className={styles.promiseIcon} />
-                <span><strong>Zero Side Effects</strong> - Completely natural and safe</span>
-                <span className={styles.urduText}><strong>سائیڈ ایفیکٹس سے پاک</strong> - مکمل قدرتی اور محفوظ</span>
-              </div>
-              <div className={styles.promiseItem}>
-                <RiCheckboxCircleFill className={styles.promiseIcon} />
-                <span><strong>Prevent Recurrence</strong> - Address root causes permanently</span>
-                <span className={styles.urduText}><strong>دوبارہ ہونے سے بچاؤ</strong> - وجوہات کا مستقل علاج</span>
-              </div>
-            </div>
-            
-            <div className={styles.finalCtas}>
+            <h2>Ready for Permanent Relief?</h2>
+            <p>Take the first step towards a pain-free life</p>
+            <div className={styles.ctaGroup}>
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:+923329622164"
-                className={styles.finalPrimaryCta}
+                href="tel:+923329622164" 
+                id="phone-dr-asma" 
+                data-doctor="dr_asma"
+                data-type="phone"
+                className={styles.primaryCta} 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                <RiPhoneFill />
-                <div>
-                  <span>SPEAK WITH DR. ASMA ARSHAD</span>
-                  <span className={styles.ctaUrdu}>ڈاکٹر عاصمہ ارشد سے براہ راست بات کریں</span>
-                  <small>Get Personalized Advice</small>
-                  <small className={styles.ctaUrdu}>ذاتی مشورہ حاصل کریں</small>
-                </div>
+                <RiPhoneFill />Dr Asma<br/><span>+92 332 9622164</span>
               </motion.a>
-              
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:+923125122488"
-                className={styles.finalSecondaryCta}
+                href="tel:+923125122488" 
+                id="phone-dr-asad" 
+                data-doctor="dr_asad"
+                data-type="phone"
+                className={styles.primaryCta} 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                <RiPhoneFill />
-                <div>
-                  <span>SPEAK WITH DR ASAD AWAN</span>
-                  <span className={styles.ctaUrdu}>ڈاکٹر اسد اعوان سے براہ راست بات کریں</span>
-                  <small>Send Your Symptoms & Get Expert Opinion</small>
-                  <small className={styles.ctaUrdu}>اپنی علامات بھیجیں اور ماہرانہ رائے حاصل کریں</small>
-                </div>
+                <RiPhoneFill />Dr Asad<br/><span>+92 312 5122488</span>
               </motion.a>
-            </div>
-            
-            <div className={styles.finalGuarantee}>
-              <div className={styles.guaranteeBadge}>
-                <RiStethoscopeFill />
-                <span><strong>COMPLETE PATIENT SATISFACTION FOCUS</strong></span>
-                <span className={styles.urduText}><strong>مکمل مریض کی تسلی پر توجہ</strong></span>
-              </div>
-              <p>We are committed to your complete healing and will work with you until you achieve the comfort you deserve without surgery.</p>
-              <p className={styles.urduText}>ہم آپ کی مکمل صحت یابی کے لیے پرعزم ہیں اور آپ کے ساتھ اس وقت تک کام کریں گے جب تک آپ بغیر آپریشن کے وہ آرام حاصل نہیں کر لیتے جس کے آپ مستحق ہیں۔</p>
-            </div>
-            
-            <div className={styles.immediateHelp}>
-              <FiClock className={styles.helpIcon} />
-              <span><strong>IMMEDIATE ATTENTION AVAILABLE:</strong> Call now and get same-day fistula relief guidance</span>
-              <span className={styles.urduText}><strong>فوری توجہ دستیاب:</strong> ابھی کال کریں اور اسی دن فسچولا سے ریلیف کی راہنمائی حاصل کریں</span>
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="mailto:ask2cure@gmail.com" 
+                className={styles.secondaryCta}
+              >
+                <FiArrowRight /> Email Your Reports
+              </motion.a>
             </div>
           </motion.div>
         </section>
-      </main>
+      </main>  
 
-      {/* Footer - Bilingual */}
+      {/* Footer */}
       <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <div className={styles.clinicInfo}>
-            <h4>Arshad Homeopathic Clinic <br/> ارشد ہومیوپیتھک کلینک</h4>
-            <p>Muslim Town, Rawalpindi</p>
-            <p>18+ Years Specializing in Fistula Treatment</p>
-          </div>
-          
-          <div className={styles.footerCtas}>
-            <a href="tel:+923329622164" className={styles.footerPhone}>
-              <RiWhatsappFill /> Dr Asma: 0332 9622164 
-            </a>
-            <a href="https://wa.me/923125122488" className={styles.footerWhatsapp}>
-              <RiWhatsappFill /> Dr Asad: 0312 5122488
-            </a>
-          </div>
-        </div>
-        
-        <div className={styles.trustFooter}>
-          <span>✓ 1500+ Fistula Patients Treated</span>
+        <div className={styles.trustBadges}>
+          <span>✓ 1500+ Proctology Patients Treated</span>
+          <span>✓ 18+ Years Experience</span>
           <span>✓ 95% Success Rate</span>
-          <span>✓ 18+ Years Specialized Experience</span>
-          <span>✓ Surgery-Free Treatment Guaranteed</span>
+        </div>
+        <p>Arshad Homeopathic Clinic, Muslim Town, Rawalpindi</p>
+        <div className={styles.websiteLink}>
+          <a href="/Testimonials" id="fistulaadvert-visit-website" target="_blank" rel="noopener noreferrer">
+            Visit Our Website for More Information
+          </a>
         </div>
       </footer>
-      
-      <ClientProviders/>
+    <ClientProviders/> 
     </div>
   );
 };
