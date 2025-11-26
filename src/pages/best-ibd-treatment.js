@@ -410,7 +410,7 @@ const IBDLanding = () => {
             <div className={styles.differenceCard}>
               <div className={styles.differenceNumber}>1</div>
               <h3>Address IBD Root Causes</h3>
-              <p className={styles.urduText}>آنتوں کی سوزش کے مسئلے کی جڑ تک پہنچیں</p>
+              <p className={styles.urduText}>آنتوں کی سوزش کے مسئلے کی بنیادی وجوہات کا علاج</p>
               <p>We don't just mask IBD symptoms. We identify and treat the underlying inflammation, immune dysfunction, and gut damage.</p>
               <p className={styles.urduText}>ہم صرف آنتوں کی سوزش کی علامات کو چھپاتے نہیں ہیں۔ ہم بنیادی سوزش، قوت مدافعت کے نظام کے مسائل اور آنتوں کے نقصان کا علاج کرتے ہیں۔</p>
             </div>

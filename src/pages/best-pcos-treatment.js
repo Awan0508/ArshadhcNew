@@ -348,7 +348,7 @@ const PcosLanding = () => {
             <div className={styles.differenceCard}>
               <div className={styles.differenceNumber}>2</div>
               <h3>Address Root Causes</h3>
-              <p className={styles.urduText}>مسئلے کی جڑ تک پہنچیں</p>
+              <p className={styles.urduText}>بنیادی وجوہات کا علاج</p>
               <p>We don't just manage symptoms. We identify and treat underlying causes—insulin resistance, inflammation, hormonal imbalance.</p>
               <p className={styles.urduText}>ہم صرف علامات کا انتظام نہیں کرتے۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
             </div>

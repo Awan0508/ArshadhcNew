@@ -348,7 +348,7 @@ const OvarianCystLanding = () => {
             <div className={styles.differenceCard}>
               <div className={styles.differenceNumber}>2</div>
               <h3>Address Root Causes</h3>
-              <p className={styles.urduText}>مسئلے کی جڑ تک پہنچیں</p>
+              <p className={styles.urduText}>بنیادی وجوہات کا علاج</p>
               <p>We don't just manage cyst pain. We identify and treat underlying causes—hormonal imbalance, inflammation, lymphatic drainage.</p>
               <p className={styles.urduText}>ہم صرف سسٹ کے درد کا انتظام نہیں کرتے۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
             </div>
@@ -392,8 +392,6 @@ const OvarianCystLanding = () => {
               <div className={styles.patientInfo}>
                 <strong>Anusha Imtiaz Satti ~ Islamabad</strong>
                 <span>★★★★★</span>
-                <span>Ovarian Cysts - Complete Resolution</span>
-                <span className={styles.urduText}>بیضہ دانی کے سسٹ - مکمل حل</span>
                 <a href="https://maps.app.goo.gl/HhhkWQhFts5TPGza8" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>
@@ -403,8 +401,6 @@ const OvarianCystLanding = () => {
               <div className={styles.patientInfo}>
                 <strong>Samana Zaynab ~ Rawalpindi</strong>
                 <span>★★★★★</span>
-                <span>Multiple Health Issues - All Resolved</span>
-                <span className={styles.urduText}>متعدد صحت سے متعلق مسائل - سب حل ہو گئے</span>
                 <a href="https://maps.app.goo.gl/HQaE9S8yzTPMJRhM9" className={styles.reviewLink} target='_blank' rel="noopener noreferrer">Google Review</a>
               </div>
             </div>

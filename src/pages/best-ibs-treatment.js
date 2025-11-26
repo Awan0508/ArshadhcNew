@@ -410,7 +410,7 @@ const IBSLanding = () => {
             <div className={styles.differenceCard}>
               <div className={styles.differenceNumber}>1</div>
               <h3>Address IBS Root Causes</h3>
-              <p className={styles.urduText}>آنتوں کی غیر معمولی حساسیت کے مرض کے مسئلے کی بنیادی وجہ تک پہنچیں</p>
+              <p className={styles.urduText}>آنتوں کی غیر معمولی حساسیت کے مرض کی بنیادی وجوہات کا علاج</p>
               <p>We don't just mask IBS symptoms. We identify and treat the underlying triggers—stress, gut sensitivity, nerve issues, and food sensitivities.</p>
               <p className={styles.urduText}>ہم صرف IBS علامات کو چھپاتے نہیں ہیں۔ ہم بنیادی وجوہات کو پہچان کر ان کا علاج کرتے ہیں۔</p>
             </div>
