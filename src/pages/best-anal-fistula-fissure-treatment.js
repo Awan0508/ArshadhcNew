@@ -87,12 +87,12 @@ const FistulaFissureLanding = () => {
       const newPlayer = new window.YT.Player(videoContainerRef.current, {
         height: '100%',
         width: '100%',
-        videoId: 'hGVUI6-RnoU',
+        videoId: '8CqsINtxZWw',
         playerVars: {
           'autoplay': 1,
           'mute': 1,
           'loop': 1,
-          'playlist': 'hGVUI6-RnoU',
+          'playlist': '8CqsINtxZWw',
           'controls': 0,
           'modestbranding': 1,
           'rel': 0,
