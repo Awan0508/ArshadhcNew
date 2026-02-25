@@ -1,4 +1,4 @@
-import styles from '../styles/adLanding.module.css';
+import styles from '../styles/adLanding old.module.css';
 import { RiWhatsappFill, RiCheckboxCircleFill, RiStethoscopeFill, RiPhoneFill, RiArrowRightLine } from 'react-icons/ri';
 import { RxHobbyKnife } from "react-icons/rx";
 import { GiMoneyStack } from "react-icons/gi";
