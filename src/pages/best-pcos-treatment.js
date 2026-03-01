@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "PCOS Relief Naturally – Regular Periods & Hormone Balance | 95% Success",
+    title: "Best PCOS Treatment in Rawalpindi– Regular Periods & Hormone Balance | 95% Success",
     description: "Natural homeopathic treatment for PCOS. Regain regular cycles, reduce weight gain, acne & excess hair without hormones or side effects. 18+ years experience. 1,000+ patients helped.",
     keywords: "PCOS treatment, polycystic ovary syndrome relief, natural PCOS cure, irregular periods treatment, homeopathic PCOS, hormone balance without drugs",
     openGraph: {

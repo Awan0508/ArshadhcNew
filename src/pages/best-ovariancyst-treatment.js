@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Permanent Ovarian Cyst Relief – Natural Treatment | 95% Success",
+    title: "Best Ovarian Cyst Treatment in Rawalpindi– Natural Treatment | 95% Success",
     description: "Natural homeopathic treatment for ovarian cysts. Resolve pain, bloating & discomfort without surgery or hormones. 18+ years experience. 800+ patients helped.",
     keywords: "ovarian cyst treatment, natural ovarian cyst cure, pelvic pain relief, homeopathic ovarian cyst, cyst without surgery, ovarian cyst pain solution",
     openGraph: {

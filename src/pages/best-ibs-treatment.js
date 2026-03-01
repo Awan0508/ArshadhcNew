@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Permanent IBS Relief – Natural Treatment | 95% Success Rate",
+    title: "Best IBS Treatment in Rawalpindi – Natural Treatment | 95% Success Rate",
     description: "Natural homeopathic treatment for IBS (Irritable Bowel Syndrome). Stop pain, bloating, diarrhea & constipation without side effects. 18+ years experience. 1,000+ patients helped.",
     keywords: "IBS treatment, irritable bowel syndrome relief, natural IBS cure, homeopathic IBS treatment, bloating relief, diarrhea constipation solution",
     openGraph: {

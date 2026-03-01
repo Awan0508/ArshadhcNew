@@ -9,7 +9,7 @@ import ClientProviders from '../app/ClientProviders';   // ← keep if needed
 
 export async function generateMetadata() {
   return {
-    title: "Permanent Anal Fistula & Fissure Relief – No Surgery | 95% Success",
+    title: "Best Anal Fistula & Fissure Treatment in Rawalpindi – No Surgery | 95% Success",
     description: "Natural homeopathic treatment for anal fistula and fissure. Avoid surgery and complications. 18+ years experience. 1,000+ patients helped. Start with free consultation.",
     keywords: "anal fistula treatment, anal fissure treatment, non-surgical fistula cure, homeopathic fistula relief, fistula pain solution",
     openGraph: {

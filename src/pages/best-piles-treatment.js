@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Permanent Piles & Hemorrhoids Relief – No Surgery | 95% Success",
+    title: "Best Piles & Hemorrhoids Treatment in Rawalpindi– No Surgery | 95% Success",
     description: "Natural homeopathic treatment for piles and hemorrhoids. Stop bleeding & pain without surgery. 18+ years experience. 1,000+ patients helped. Free consultation.",
     keywords: "piles treatment, hemorrhoids treatment, bleeding piles relief, non-surgical piles cure, homeopathic piles treatment",
     openGraph: {

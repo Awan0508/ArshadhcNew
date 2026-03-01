@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Permanent Sciatica Relief – Natural Treatment | 95% Success Rate",
+    title: "Best Sciatica Treatment in Rawalpindi– Natural Treatment | 95% Success Rate",
     description: "Natural homeopathic treatment for sciatica nerve pain. Relieve leg pain, numbness & back issues without surgery. 18+ years experience. 1,000+ patients helped.",
     keywords: "sciatica treatment, sciatic nerve pain relief, lower back pain, leg numbness, natural sciatica cure, homeopathic sciatica, non-surgical nerve pain solution",
     openGraph: {

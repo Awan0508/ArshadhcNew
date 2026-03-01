@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Permanent IBD, Crohn's & Colitis Relief – No Side Effects | 95% Success",
+    title: "Best IBD, Crohn's & Colitis Treatment in Rawalpindi – No Side Effects | 95% Success",
     description: "Natural homeopathic treatment for IBD, Crohn's disease & ulcerative colitis. Stop pain, bleeding & inflammation without side effects. 18+ years experience. 1,000+ patients helped.",
     keywords: "IBD treatment, Crohn's disease treatment, ulcerative colitis relief, inflammatory bowel disease, homeopathic IBD cure, gut inflammation treatment",
     openGraph: {

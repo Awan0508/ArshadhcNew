@@ -7,7 +7,7 @@ import ClientProviders from '../app/ClientProviders';
 
 export async function generateMetadata() {
   return {
-    title: "Permanent Arthritis & Joint Pain Relief – No Surgery | 95% Success",
+    title: "Get Your Arthritis & Joint Pain Relief – No Surgery | 95% Success",
     description: "Natural homeopathic treatment for arthritis, osteoarthritis & joint pain. Reduce inflammation & stiffness without surgery. 18+ years experience. 1,000+ patients helped.",
     keywords: "arthritis treatment, joint pain relief, osteoarthritis treatment, rheumatoid arthritis, homeopathic arthritis cure, non-surgical joint pain solution",
     openGraph: {
