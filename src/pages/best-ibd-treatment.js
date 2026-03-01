@@ -108,7 +108,7 @@ export default function IBDLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent IBD, Crohn's & Colitis Relief – No Side Effects | 95% Success</title>
+        <title>Best IBD, Crohn's & Colitis Treatment in Rawalpindi – No Side Effects | 95% Success</title>
       </Head>
 
       {/* Emergency Popup */}

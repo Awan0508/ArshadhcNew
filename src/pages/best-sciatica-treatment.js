@@ -108,7 +108,7 @@ export default function SciaticaLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent Sciatica Relief – Natural Treatment | 95% Success Rate</title>
+        <title>Best Sciatica Treatment in Rawalpindi – Natural Treatment | 95% Success Rate</title>
       </Head>
 
       {/* Emergency Popup */}

@@ -108,7 +108,7 @@ export default function PcosLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>PCOS Relief Naturally – Regular Periods & Hormone Balance | 95% Success</title>
+        <title>Best PCOS Treatment in Rawalpindi – Regular Periods & Hormone Balance | 95% Success</title>
       </Head>
 
       {/* Emergency Popup */}

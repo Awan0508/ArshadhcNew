@@ -110,7 +110,7 @@ export default function ArthritisLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent Arthritis & Joint Pain Relief – No Surgery | 95% Success</title>
+        <title>Get Your Arthritis & Joint Pain Relief – No Surgery | 95% Success</title>
       </Head>
 
       {/* Emergency Popup */}

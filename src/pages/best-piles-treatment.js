@@ -108,7 +108,7 @@ export default function PilesLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent Piles & Hemorrhoids Relief – No Surgery | 95% Success</title>
+        <title>Best Piles & Hemorrhoids Treatment in Rawalpindi – No Surgery | 95% Success</title>
       </Head>
 
       {/* Emergency Popup – same style as fistula page */}

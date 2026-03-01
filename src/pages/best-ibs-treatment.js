@@ -108,7 +108,7 @@ export default function IBSLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent IBS Relief – Natural Treatment | 95% Success Rate</title>
+        <title>Best IBS Treatment in Rawalpindi – Natural Treatment | 95% Success Rate</title>
       </Head>
 
       {/* Emergency Popup */}

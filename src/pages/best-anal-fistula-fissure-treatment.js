@@ -114,7 +114,7 @@ export default function FistulaFissureLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent Anal Fistula & Fissure Relief – No Surgery | 95% Success</title>
+        <title>Best Anal Fistula & Fissure Treatment in Rawalpindi – No Surgery | 95% Success</title>
       </Head>
 
       {/* ────────────────────────────────────────────────

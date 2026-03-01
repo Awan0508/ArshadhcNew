@@ -108,7 +108,7 @@ export default function OvarianCystLanding() {
   return (
     <div className={styles.page}>
       <Head>
-        <title>Permanent Ovarian Cyst Relief – Natural Treatment | 95% Success</title>
+        <title>Best Ovarian Cyst Treatment in Rawalpindi – Natural Treatment | 95% Success</title>
       </Head>
 
       {/* Emergency Popup */}
