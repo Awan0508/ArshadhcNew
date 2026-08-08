@@ -21,6 +21,9 @@ export const metadata = {
   alternates: {
     canonical: "https://www.arshadhc.com",
   },
+  verification: {
+    google: 'mdSyn0ZG5jfvkP0rM78sQDa6-znhL5hrt3vOCDOW9Ko',  // paste only the code
+  },
   openGraph: {
     type: "website",
     locale: "en_PK",
